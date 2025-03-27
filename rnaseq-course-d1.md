@@ -1,6 +1,7 @@
 ---
-title: "RNAseq Data Processing & Analysing Course"
-author: "Alex Gibbs"
+title: "An introduction to Unix, NF-core & FASTQ prefetch"
+author: "Aimee Bettridge"
+acknowledgements: "Alex Gibbs & Robert Andrews"
 #full-width: true
 ---
 
@@ -10,67 +11,39 @@ author: "Alex Gibbs"
 ---
 ---
 
-We will cover:
+## Course goal
+---
 
-- Introduction to course.
-- Basic Unix.
-- Introduction to HAWK.
-- Basic Unix Continued.
-- Fetch data with nf-core/fetchngs pipeline.
+Hello and welcome to our bulk RNA-seq analysis course! This course aims to equip you with the foundational skills and knowledge required to set up a supercomputing environment and analyse a bulk RNA-seq dataset from FASTQ prefetch to identifying genes of interest. We will use a simple public data set to demonstrate how to do this. At the end of this course, we will offer our support in setting up your own custom analysis pipeline. We strongly encourage you to attend each session as it may be difficult to catch up later.
 
 ---
 
 <br>
 
 ---
-## Course Introduction
+## Today's Learning objectives
 ---
 ---
-
-You should have one of three questions:
-
-- Have you found a nice bulk-RNAseq dataset from a paper and want to download and use it for your research?
-- Have you recently generated bulk-RNAseq data and need to process and analyse it?
-- You are planning a bulk-RNAseq experiment and would like to know how to process the data when the time comes?
-
----
-
-<br>
-
----
-## What you will learn on this course:
----
----
-
-- How to find and download sequencing data from online data repositories.
-- How to process the sequencing data.
-- How to analyse the sequencing data.
-- How to interpret the analysed data.
+You should expect to:
+- Set up a remote session using your laptop.
+- Navigate and use the Hawk supercomputing environment.
+- Call basic Unix commands with working examples.
+- Download raw bulk RNA-seq data from a public repository.
+- Reproduce today's analysis with own data.
 
 ---
 
 <br>
 
 ---
-## What you won't learn on this course:
+## What we will not do here
 ---
 ---
 
-- How RNAseq technology/process works. Please see this [video](https://www.youtube.com/watch?v=tlf6wYJrwKY) for an overview.
-- How to hack the mainframe and take over the world.
+- Cover how RNA-seq libraries are generated and next generation sequencing (NGS). Watch this [video](https://www.youtube.com/watch?v=tlf6wYJrwKY) for an overview.
+- Cover more advanced sequencing technologies (e.g. scRNA-seq). We also provide training in scRNA-seq analysis.
+- Overburden you with too much information; we will signpost towards further reading and support where appropriate.
 
----
-
-<br>
-
----
-## Basic Unix: Learning Objectives
----
----
-
-- Learn the concept of using the command line.
-- Learn how to navigate and manipulate files and data.
-- Learn how to run and manage programs.
 
 ---
 
@@ -101,7 +74,7 @@ You should have one of three questions:
 - The GUI is what allows us to point and click on things, which in turn opens the respective programs etc.
 - These operations can also be performed using the command line through the use of a shell.
 
-<img src="/assets/img/figure-1.png" alt="Shell" width="1200"/> 
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-1.png" alt="Shell" width="1200"/> 
 
 This is a shell. We can use this to type commands etc.
 
@@ -134,7 +107,7 @@ This is a shell. We can use this to type commands etc.
 - From here, we will now refer to folders as **directories**.
 - The basic structure of HAWK:
 
-<img src="/assets/img/figure-3.png" alt="Basic HAWK Structure" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-3.png" alt="Basic HAWK Structure" width="1000"/>
 
 - We have two main directories: <span style="color: green;">*home*</span> and <span style="color: red;">*scratch*.
 
@@ -259,7 +232,7 @@ pwd
 /Users/alexgibbs/Desktop
 ```
 
-<img src="/assets/img/pwd.gif" alt="pwd" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/pwd.gif" alt="pwd" width="1000"/>
 
 ---
 
@@ -282,7 +255,7 @@ ls
 IGV_2.8.10.app  plan-to-take-over-the-world  Why is multiple t-testing a problem?.pdf
 ```
 
-<img src="/assets/img/ls.gif" alt="ls" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/ls.gif" alt="ls" width="1000"/>
 
 - To see this list in a long format, we can use the `-l` option.
 - To see hidden contents, we can use the `-a` option.
@@ -296,13 +269,13 @@ ls -lah
 
 **Output**
 
-<img src="/assets/img/figure-4.png" alt="ls" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-4.png" alt="ls" width="1000"/>
 
 - We will cover permissions shortly
 
 <br>
 
-<img src="/assets/img/ls-lah.gif" alt="ls" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/ls-lah.gif" alt="ls" width="1000"/>
 
 - Any file or directory with a dot (.) in front makes it hidden.
 - Hidden files are usually filesystem files and directories required by the system to correctly operate and function.
@@ -337,7 +310,7 @@ how-to-attach-lasers-to-sharks.docx  world-takeover-ticklist.pdf
 script-to-steal-all-the-money-in-the-UK.sh
 ```
 
-<img src="/assets/img/cd-ls.gif" alt="ls" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/cd-ls.gif" alt="ls" width="1000"/>
 
 ---
 
@@ -376,7 +349,7 @@ ls .
 
 **Output**
 
-<img src="/assets/img/ls-ls.dot.gif" alt="ls" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/ls-ls.dot.gif" alt="ls" width="1000"/>
 
 - Both give me the same output.
 - If I wanted to see what contents were above/outside of my Desktop, I would use `ls ..`
@@ -388,7 +361,7 @@ ls ..
 
 **Output**
 
-<img src="/assets/img/ls.dot.dot.gif" alt="ls" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/ls.dot.dot.gif" alt="ls" width="1000"/>
 
 ---
 
@@ -421,7 +394,7 @@ ls dir-1/
 
 **Output**
 
-<img src="/assets/img/wildcard.gif" alt="Wildcard" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/wildcard.gif" alt="Wildcard" width="1000"/>
 
 ---
 
@@ -446,7 +419,7 @@ pwd
 /home/steve
 ```
 
-<img src="/assets/img/figure-5.png" alt="ls" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-5.png" alt="ls" width="1000"/>
 
 - One of the SCW administrators told me that a few users had used my account for training purposes and stored some files etc. Lets first see if the users made a directory in the home directory:
 
@@ -462,7 +435,7 @@ ls ..
 karen  steve  terry
 ```
 
-<img src="/assets/img/figure-6.png" alt="ls" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-6.png" alt="ls" width="1000"/>
 
 - I decided to look at what Karen had been up to in the home directory.
 - Theres two ways to do this, <span style="color:red;">either move into her directory and list the contents</span>, <span style="color:green;">or use the list command</span>.
@@ -482,7 +455,7 @@ ls</b></span></pre>
 
 **Output**
 
-<img src="/assets/img/figure-7.png" alt="ls" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-7.png" alt="ls" width="1000"/>
 
 ---
 
@@ -509,7 +482,7 @@ other|Everyone
 
 <br>
 
-<img src="/assets/img/figure-8.png" alt="File Permissions" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-8.png" alt="File Permissions" width="1000"/>
 
 <br>
 
@@ -550,7 +523,7 @@ chmod +x file-permission.sh
 ls -l
 ```
 
-<img src="/assets/img/permissions.gif" alt="File Permissions" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/permissions.gif" alt="File Permissions" width="1000"/>
 
 ---
 
@@ -580,7 +553,7 @@ ls -l
 cp name-of-file.txt path/to/directory/
 ```
 
-<img src="/assets/img/cp.gif" alt="Copying a File" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/cp.gif" alt="Copying a File" width="1000"/>
 
 - The command works by first inputting the name of the file/directory that you want to copy, followed by the location of where you want to copy it to.
 - To copy a directory, we need to use the `-r` option, which recursively copies the directory and all of its contents to the desired location:
@@ -590,7 +563,7 @@ cp name-of-file.txt path/to/directory/
 cp -r name-of-directory path/to/directory/
 ```
 
-<img src="/assets/img/cp-r.gif" alt="Copying a Directory" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/cp-r.gif" alt="Copying a Directory" width="1000"/>
 
 - To state the obvious, this command makes a copy of the file at the destination that you have chosen.
 
@@ -611,9 +584,9 @@ mv name-of-file.txt path/to/directory/
 mv name-of-directory path/to/directory/
 ```
 
-<img src="/assets/img/mv-file.gif" alt="Moving a File" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/mv-file.gif" alt="Moving a File" width="1000"/>
 
-<img src="/assets/img/mv-directory.gif" alt="Moving a Directory" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/mv-directory.gif" alt="Moving a Directory" width="1000"/>
 
 - The command works by first inputting the name of the file/directory that you want to move, followed by the location of where you want to move it to.
 - **Note**: This command physically moves the file/directory to the location you have chosen. Be aware of typos when using this command, as it is very easy to overwrite other files/directories!
@@ -626,7 +599,7 @@ mv name-of-file.txt new-name-of-file.txt
 mv name-of-directory new-name-of-directory
 ```
 
-<img src="/assets/img/renaming.gif" alt="Renaming a File/Directory" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/renaming.gif" alt="Renaming a File/Directory" width="1000"/>
 
 ---
 
@@ -644,7 +617,7 @@ mv name-of-directory new-name-of-directory
 ```
 touch name-of-file.extension.name
 ```
-<img src="/assets/img/touch.gif" alt="Making an empty file" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/touch.gif" alt="Making an empty file" width="1000"/>
 
 - The command works by calling the `touch` command followed by the name and extension of the file you want to create.
 - To make a file named `myFile.txt`, we would use `touch myFile.txt`.
@@ -676,7 +649,7 @@ y
 enter
 ```
 
-<img src="/assets/img/nano.gif" alt="Making and editing a file with nano" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/nano.gif" alt="Making and editing a file with nano" width="1000"/>
 
 - Along the bottom of the editor, you can see the various options that you are able to use.
 - Once we use `ctrl + x` you can see the bottom of the editor changes to `save modified buffer?`. Typing `Y` saves the file, `N` deletes it.
@@ -713,7 +686,7 @@ mkdir directory1/directory1.1
 ```
 - The `touch` command can also be used in this manner.
 
-<img src="/assets/img/mkdir.gif" alt="Making a directory" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/mkdir.gif" alt="Making a directory" width="1000"/>
 
 ---
 
@@ -803,33 +776,119 @@ Change the permissions by using chmod: <pre><span style="color:crimson;"> chmod 
 </details>
 
 ---
-
 <br>
 
 ---
----
-# nf-core/fetchngs Pipeline
----
----
-
-- nf-core is a community effort to collect a curated set of analysis pipelines that are built using Nextflow.
-- The nf-core website contains >100 curated pipelines and is used by thousands of researchers and bioinformaticians across the globe.
-- These pipelines are community-validated by bioinformaticians across the globe, and are standardized to ensure that they adhere to community standards such as FAIR principles.
-- Nextflow is a tool that allows us to run several different tasks on HAWK.
-- Each task may depend on an output from a previous task, may need to be run sequentially, or perhaps need to be run individually all at once.
-- Nextflow allows us to do this, and helps organise the way these tasks are run.
+## BASH scripting
 
 ---
-
+* <font color="red">BASH scripts are ultimately not an efficient method of storing a workflow.</font> 
 <br>
 
 ---
-**Fetchngs Pipeline**
+## 2. An introduction to nf-core
+--- 
+- A community-led framework which hosts a curated set of open-source analysis [pipelines](https://nf-co.re/pipelines/) built using Nextflow.
+- Includes >100 maintained pipelines and >1400 reusable modules that aim  to be accessible, well-documented, and easily understandable.
+  - Adheres to [FAIR](https://fellowship.elixiruknode.org/latest/gtn-tutorial-fair-in-a-nutshell) principles. 
+- Its ethos encompasses open-sourced, collaborative and supportive principles. Their seminars and training are free to join and they offer further support through their [slack](https://nf-co.re/join) channel.
+- **We will be using up-to-date nf-core pipelines for our analysis**. 
+<br>
 
+---
+### 2.1 What is nextflow?
+---
+- Both a workflow management system and a domain-speciifc language based on Java and Groovy, meaning it:
+  - Allows us to execute increasingly more complex tasks in the age of big data.
+  - Runs several different tasks on Hawk automatically with minimal input. Convenient!
+  - Organises our tasks through channels, allowing them to communicate with each other.
+<br>
+*Channels commonly convey data inpts and outputs between processes to get to the final product:*
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/channel-process.png" alt="" width="1000"/>
+<br>
+<details>
+<summary><b>Nextflow boasts many other benefits...</b></summary>
+
+<br>
+
+Each task can be written in virtually any coding language.
+
+<br>
+
+Is portable (compatible across platforms and job schedulers on the supercomputer).
+
+<br>
+
+Is reproducible through containerisation and version control.
+
+<br>
+
+Is highly customisable.
+
+<br>
+
+Easily resume work from any checkpoint.
+
+<br> 
+
+Parallel processing - performs many tasks independently and simultaneously.
+
+<br>
+
+</details>
+<br>
+
+---
+#### 2.1.1 What you should know
+---
+Everytime you execute or resume Nextflow a unique work directory based on a hash is created. This work directory is used to stage input files and scripts in addition to writing outputs for downstream tasks and/or publishing (desired outputs are copied over to our project input and output directories).
+
+You will find the Nextflow logfile and work directory from wherever you execute your nf-core pipeline. For example:
+
+```bash
+$ tree -a work
+work
+└── 39
+    └── ef16fd4a3de2f512ed91a85ce900bf
+        ├── .command.sh
+        ├── .command.out
+        ├── .command.err
+        ├── .command.log
+        ├── R1.fastq
+        └── R2.fastq
+```
+reveals a very simplified expected Nextflow work directory structure containing final and/or intermediate data outputs and error files.
+<details>
+<summary><b>How to navigate these hidden files</b></summary>
+File name|Description|Useful how?
+|:------:|:--------:|:----------:|
+.command.sh|Script Nextflow uses to run a task|Easier to spot syntax/variable issues
+.command.out|Process standard output|Prints results that would normally go to the terminal & check if process completed successfully
+.command.err|Process standard error|For reading warnings, errors, and debugging
+.command.log|Combined standard output & error|Get a full picture of what went wrong
+</details>
+
+<br>
+The nextflow logfile (.nextflow.log) is handy to view the total pipeline execution history and can shed light on potential errors, resource usage, time to completion and task submission details.
+
+<br>
+<br>
+<div style="background-color:#250D18; border-top: 37px solid #7B1F3F; padding: 10px 16px 10px; color: #DEABA0; position: relative;">
+    <span style="position: absolute; top: -30px; left: 1px; font-weight: bold; color: #DEABA0; background-color: #7B1F3F; padding: 5px 10px; line-height: 20px; display: inline-block; border-radius: 4px;">
+        &#128221; Note:
+    </span>
+    Learning Nextflow from scratch can be daunting. We will not go into unnecessary detail here, though there are several good resources and training opportunities we recommend through 
+    <a href="https://arcca.github.io/index.html#register-for-future-courses" style="color: #019E95; text-decoration: underline;">ARCCA</a>, <a href="https://nf-co.re/events/training" style="color:  #019E95; text-decoration: underline;">nf-core</a>, and 
+    <a href="https://www.nextflow.io/docs/latest/index.html" style="color: #019E95; text-decoration: underline;">Nextflow</a> documents.
+</div>
+<br>
+
+---
+### 2.2 nf-core/fetchngs Pipeline
+---
 - This pipeline allows us to fetch metadata and raw FastQ files from public and private databases
 - The pipeline currently supports SRA/ENA/DDBJ/GEO/Synapse IDs.
 - The only thing we need for this pipeline to run is a list of sample IDs.
-
 ---
 
 <br>
@@ -853,25 +912,25 @@ Change the permissions by using chmod: <pre><span style="color:crimson;"> chmod 
 - When accessing the GEO website, we are faced with multiple links and tools.
 - If we have a dataset in mind that we would like to find, we can use the search bar at the top right of the page.
 
-<img src="/assets/img/figure-9.png" alt="GEO Homepage" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-9.png" alt="GEO Homepage" width="1000"/>
 
 - I would like to find a bulk rna seq dataset on renal cell carcinoma. To do this, I enter '**renal cell carcinoma rna seq**' into the search bar and click 'search'.
 - A pop-up window appears telling me that there are 351 results. Clicking on the '351' will load the results.
 
-<img src="/assets/img/figure-10.png" alt="using GEO search bar" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-10.png" alt="using GEO search bar" width="1000"/>
 
 - On the results page, we are greeted with the results accompanied by further optional filters on the left and right hand side of the page.
 
-<img src="/assets/img/figure-11.png" alt="Results page" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-11.png" alt="Results page" width="1000"/>
 
 - Here, we will choose to filter for **Homo sapiens** using the option on the right hand side and then browse for an interesting dataset.
 - For this course, I found a nice dataset looking at the effects of hypoxia on gene expression across two different cell lines.
 
-<img src="/assets/img/figure-12.png" alt="Dataset that we will be using" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-12.png" alt="Dataset that we will be using" width="1000"/>
 
 - Clicking on the dataset title will load the series record for that dataset. Can everyone follow this [link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225253) and follow along.
 
-<img src="/assets/img/figure-13.png" alt="GEO series record" width="500"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-13.png" alt="GEO series record" width="500"/>
 
 - The dataset series record page displays the all the relevant information about that dataset.
 - Towards the top of the page, you will find information about the study in which the dataset was used.
@@ -890,7 +949,7 @@ Change the permissions by using chmod: <pre><span style="color:crimson;"> chmod 
 
 <br>
 
-<img src="/assets/img/figure-14.png" alt="Analyze with GEO2R tool" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-14.png" alt="Analyze with GEO2R tool" width="1000"/>
 
 </details>
 
@@ -905,7 +964,7 @@ Change the permissions by using chmod: <pre><span style="color:crimson;"> chmod 
 
 <br>
 
-<img src="/assets/img/figure-15.png" alt="Download RNA-seq counts" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-15.png" alt="Download RNA-seq counts" width="1000"/>
 
 </details>
 
@@ -945,7 +1004,7 @@ Change the permissions by using chmod: <pre><span style="color:crimson;"> chmod 
   3) Once all samples are selected, we can now click on the **sliding Selected tab** so move it to the right. This filters the data to include only the samples we have selected.
   4) Now we can click on the **Accession list** option. This downloads a text file called **SRR_Acc_List.txt**.
 
-<img src="/assets/img/figure-16.png" alt="SRA Run Selector" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/figure-16.png" alt="SRA Run Selector" width="1000"/>
 
 <details>
 <summary><b>SRR_Acc_List.txt</b></summary>
@@ -990,7 +1049,7 @@ SRR23454126
 - You will be prompted (top box) to enter your password. Do this and hit enter.
 - You are now connected to HAWK.
 
-<img src="/assets/img/pre-3.png" alt="Connecting to HAWK" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/pre-3.png" alt="Connecting to HAWK" width="1000"/>
 
 
 ***Linux Users***
@@ -1014,12 +1073,12 @@ ssh c.c1234567@hawklogin.cf.ac.uk
 - You may be prompted 'Do you trust the authors this folder?'. Click 'Trust all authors' or 'Yes'.
 - You will now see that the directory will be open on the left of the window. Note: Most of you won't have anything here as you have not used HAWK or scratch before. Mine is populated with various directories.
 
-<img src="/assets/img/d1-fig1.png" alt="Connecting to HAWK and navigating to scratch directory" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/d1-fig1.png" alt="Connecting to HAWK and navigating to scratch directory" width="1000"/>
 
 - We next want to fetch the project from GitHub. To do this, we need a terminal window open so we can paste the code into.
 - Click on 'Terminal' at the top of your screen and select 'New Terminal'. This will open a terminal window at the bottom of your VSCode window.
 
-<img src="/assets/img/d1-fig2.png" alt="Opening a terminal window in VSCode" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/d1-fig2.png" alt="Opening a terminal window in VSCode" width="1000"/>
 
 - Now we can simply paste the following code into the terminal and hit enter:
 
@@ -1030,7 +1089,7 @@ git clone https://github.com/Gibbatron/rnaseq-course.git
 - To double check if the directory has been downloaded, we can use the `ls` command.
 - We should also see that the directory is now in the 'Explorer' window on the left. This may not be the case. To update the window, we can simply click the 'Refresh Explorer' button.
 
-<img src="/assets/img/d1-fig3.png" alt="Pulling the project from GitHub" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/d1-fig3.png" alt="Pulling the project from GitHub" width="1000"/>
 
 - To see the contents of the downloaded directory, you can click on it to expand, or use the drop-down arrow next to it.
 
@@ -1066,7 +1125,7 @@ chmod +x *.sh
 - Note: When changing directories within the terminal window, **the explorer window does not update as you go**, neither does it update if you click the refresh button.
 - Note: You can move in- and out of directories using the explorer window. Right-clicking on the directory and clicking on 'Open in Integrated Terminal' will open the directory in the terminal window. There will be another section added to the terminal window on the right with two options. One named 'bash', the other named 'bash *rnaseq-course*'. The 'bash' option is where you originally were (your scratch directory) and the 'bash *rnaseq-course*' option is in the rnaseq-course directory. Clicking between these moves you to the subsequent directory and you will notice the terminal window changes with this too.
 
-<img src="/assets/img/d1-fig4.png" alt="changing directories within VSCode" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/d1-fig4.png" alt="changing directories within VSCode" width="1000"/>
 
 ---
 #### Required files
@@ -1166,7 +1225,7 @@ input7,input8,input9
 - This will load the file into the main window as a table rather than its native format - this will make it easier for you to edit and understand the structure of the file.
 - I would reccomend just clicking on it to open though, as the file has only one column.
 
-<img src="/assets/img/d1-fig5.png" alt="Opening a .csv file" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/d1-fig5.png" alt="Opening a .csv file" width="1000"/>
 
 - With the file open, delete the text in both rows and paste your IDs into the table.
 - Now save the table with `File > Save`.
@@ -1356,9 +1415,9 @@ module load singularity/singularity-ce/3.11.4
 
 - This will run the pipeline for us. Leave the pipeline run for a few minutes to ensure it is working, then we can close the session by doing the following:
 
-<img src="/assets/img/d1-tmux.gif" alt="Opening a tmux session" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/d1-tmux.gif" alt="Opening a tmux session" width="1000"/>
 
-<img src="/assets/img/d1-fig6.png" alt="Executing the fetchngs pipeline" width="1000"/>
+<img src="C:\Users\c1305968\Downloads\Bulk_RNA_seq_course.github.io\assets\img/d1-fig6.png" alt="Executing the fetchngs pipeline" width="1000"/>
 
 
 ```
