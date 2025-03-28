@@ -20,7 +20,7 @@ author: Aimee Bettridge
 ###############################################
 
 navbar-links:
-  About Us: "About Us"
+  About Us: "https://walesgenepark.cardiff.ac.uk/en/home/"
   RNAseq Course:
     - Pre-course: "rnaseq-course-pre"
     - Day 1: "rnaseq-course-d1"
