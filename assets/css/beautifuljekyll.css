@@ -24,6 +24,24 @@ layout: null
   --mid-col: #808080;
 }
 
+/* --- General Layout and Flexbox Section --- */
+
+/* This section is where we add the Flexbox layout for content */
+.content {
+  display: flex;
+}
+
+.main-post {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.sidebar {
+  width: 300px;
+  padding-left: 20px;
+  background-color: #f7f7f7;
+}
+
 /* --- General --- */
 
 html {
@@ -93,7 +111,7 @@ hr.small {
   max-width: 6.25rem;
   margin: 1rem auto;
   border-width: 0.25rem;
-  border-color: inherit;
+  border-color: #7B1F3F;
   border-radius: 0.1875rem;
 }
 
