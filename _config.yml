@@ -20,7 +20,7 @@ author: Aimee Bettridge
 ###############################################
 
 navbar-links:
-  About Us: "About Us"
+  About Us: https://walesgenepark.cardiff.ac.uk/en/home/
   RNAseq Course:
     - Pre-course: "rnaseq-course-pre"
     - Day 1: "rnaseq-course-d1"
@@ -34,10 +34,10 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/WGP_avatar.png"
+avatar: "/assets/img/WGP_avatar2.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
@@ -62,11 +62,11 @@ social-network-links:
 # whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
-  linkedin: "wales-gene-park-parc-geneteg-cymru"
+  linkedin: "../company/wales-gene-park-parc-geneteg-cymru/"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-  instagram: @WalesGenePark
+  instagram: walesgenepark
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
@@ -145,9 +145,9 @@ link-col: "#019E95"
 hover-col: "#018182"
 navbar-col: "#250D18"
 navbar-text-col: "#DEABA0"
-navbar-border-col: "#DE7B21"
+navbar-border-col: "#DEABA0"
 footer-col: "#250D18"
-footer-text-col: "#777777"
+footer-text-col: "#DE7B21"
 footer-link-col: "#019E95"
 footer-hover-col: "#018182"
 
@@ -304,6 +304,7 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-toc
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
