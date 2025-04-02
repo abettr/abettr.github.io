@@ -5,7 +5,6 @@ editors: "Alex Gibbs, Robert Andrews"
 toc: true
 #full-width: true
 ---
-{% toc %}
 
 <style>
   hr {
