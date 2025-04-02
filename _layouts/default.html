@@ -13,7 +13,18 @@ layout: base
     </div>
   {% endif %}
 
-  {{ content }}
+  <!-- Start of your content and sidebar wrapper -->
+  <div class="content">
+    <div class="main-post">
+      {{ content }}  <!-- Main post content -->
+    </div>
+
+    <div class="sidebar">
+      <!-- Sidebar where Table of Contents will go -->
+      {% include toc.html %}
+    </div>
+  </div>
+  <!-- End of content and sidebar wrapper -->
 
   {% if page.after-content %}
     <div class="after-content">
