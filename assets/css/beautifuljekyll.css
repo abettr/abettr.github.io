@@ -42,6 +42,8 @@ body {
   {% endif %}
   overflow-wrap: break-word;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 body > main {
   flex: 1;
