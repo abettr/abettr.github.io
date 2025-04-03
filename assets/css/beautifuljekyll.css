@@ -36,7 +36,6 @@ body {
   color: var(--text-col);
   position: relative;
   background-color: var(--page-col);
-  margin-right: 100rem;
   {% if site.page-img %}
   background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
@@ -48,6 +47,7 @@ body {
 }
 body > main {
   flex: 1;
+  padding-right: 100rem;
 }
 p {
   line-height: 1.5;
