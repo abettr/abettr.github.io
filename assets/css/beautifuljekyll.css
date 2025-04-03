@@ -408,10 +408,12 @@ nav[data-toggle="toc"] {
   top: 42px;
 }
 
-.sticky-top {
+.toc-sticky {
   position: sticky;
-  top: 100px;
-  align-self: flex-start;
+  top: 20px; /* Adjust space from the top */
+  height: fit-content;
+  max-height: 90vh; /* Prevents overflow */
+  overflow-y: auto; /* Adds scrolling if ToC is too long */
 }
 /* --- Footer --- */
 
