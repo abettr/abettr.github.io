@@ -860,13 +860,6 @@ table tr td :last-child {
   margin-bottom: 0;
 }
 
-/* --- TOC --- */
-aside#sidebar {
-  float: left;
-  width: 300px;
-  min-height: 504px;
-}
-
 /* --- Code blocks --- */
 
 code {
@@ -1129,4 +1122,10 @@ pre {
   #nav-search-text {
     display: inline-block;
   }
+
+/* --- Custom margins --- */
+.markdown-page .container-md {
+  margin-right: 2rem; /* Adjust the value as needed */
+}
+
 }
