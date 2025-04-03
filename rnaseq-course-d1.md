@@ -3,7 +3,7 @@ title: "An introduction to Unix, NF-core & FASTQ prefetch"
 author: "Aimee Bettridge"
 editors: "Alex Gibbs, Robert Andrews"
 toc: true
-#full-width: true
+full-width: true
 ---
 
 <style>
