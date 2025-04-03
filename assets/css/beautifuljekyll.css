@@ -48,11 +48,6 @@ body {
 }
 body > main {
   flex: 1;
-  padding: 20px;
-}
-.sidebar {
-  width: 300px;
-  padding: 20px;
 }
 p {
   line-height: 1.5;
