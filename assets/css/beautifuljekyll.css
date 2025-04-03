@@ -97,6 +97,11 @@ hr.small {
   border-radius: 0.1875rem;
 }
 
+.col-md-9 {
+  flex-grow: 1;
+  width: 100%;
+}
+
 /* fix in-page anchors to not be behind fixed header */
 :target:before {
   content: "";
