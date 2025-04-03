@@ -863,7 +863,7 @@ table tr td :last-child {
 /* --- TOC --- */
 aside#sidebar {
   float: left;
-  width: 200px;
+  width: 300px;
   min-height: 504px;
 }
 
