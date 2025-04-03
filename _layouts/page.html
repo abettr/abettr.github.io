@@ -15,9 +15,14 @@ layout: base
         </div>
       {% endif %}
 
-      {{ content }}
-
-      {% include toc.html html=content %}
+      <div class="row">
+        <aside class="col-md-3">
+          {% include toc.html html=content %}
+        </aside>
+        <div class="col-md-9">
+          {{ content }}
+        </div>
+      </div>
 
       {% if page.after-content %}
         <div class="after-content">
