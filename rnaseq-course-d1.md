@@ -8,8 +8,8 @@ toc_float: true
 ---
 
 <style type="text/css">
-.main-container {
-  width: 90% !important;
+.container {
+  width: 80% !important;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
