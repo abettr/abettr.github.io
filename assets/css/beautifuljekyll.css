@@ -1125,18 +1125,13 @@ pre {
 
 .page-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centers content */
 }
 
-.toc {
-    flex: 1;
-    max-width: 250px; /* Adjust as needed */
-    margin-right: 20px;
-}
-
-.article-content {
-    flex: 3;
-    max-width: 900px;
-
+.page-content .wrapper {
+    max-width: 1200px; /* Adjust width as needed */
+    width: 90%; /* Ensures responsiveness */
+    display: flex;
+    flex-direction: column;
 }
 }
