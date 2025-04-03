@@ -45,6 +45,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* --- Custom margins --- */
+body.markdown-page .container-md {
+  margin-right: 2rem; /* Adjust the value as needed */
+}
 body > main {
   flex: 1;
 }
@@ -1122,10 +1126,5 @@ pre {
   #nav-search-text {
     display: inline-block;
   }
-
-/* --- Custom margins --- */
-.markdown-page .container-md {
-  margin-right: 2rem; /* Adjust the value as needed */
-}
 
 }
