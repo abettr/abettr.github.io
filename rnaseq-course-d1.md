@@ -4,18 +4,9 @@ author: "Aimee Bettridge"
 editors: "Alex Gibbs, Robert Andrews"
 toc: true
 toc_float: true
-full-width: true
-classes: wide
+#full-width: true
 ---
 
-<style type="text/css">
-.container {
-  width: 80% !important;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
 <style>
   hr {
     box-sizing: border-box;
