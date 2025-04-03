@@ -9,7 +9,8 @@ toc_float: true
 
 <style type="text/css">
 .main-container {
-  max-width: 1200px !important;
+  max-width: 1200px;
+  margin-left: auto;
 }
 </style>
 <style>
