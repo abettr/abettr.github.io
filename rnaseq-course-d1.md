@@ -4,7 +4,7 @@ author: "Aimee Bettridge"
 editors: "Alex Gibbs, Robert Andrews"
 toc: true
 toc_float: true
-#full-width: true
+full-width: true
 classes: wide
 ---
 
