@@ -5,6 +5,7 @@ editors: "Alex Gibbs, Robert Andrews"
 toc: true
 toc_float: true
 #full-width: true
+classes: wide
 ---
 
 <style type="text/css">
