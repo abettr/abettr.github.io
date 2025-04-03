@@ -43,11 +43,16 @@ body {
   overflow-wrap: break-word;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  max-width: calc(100% - 300px);
 }
 body > main {
   flex: 1;
-  padding-right: 100rem;
+  padding: 20px;
+}
+.sidebar {
+  width: 300px;
+  padding: 20px;
 }
 p {
   line-height: 1.5;
