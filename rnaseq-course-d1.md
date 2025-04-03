@@ -9,7 +9,7 @@ toc_float: true
 
 <style type="text/css">
 .main-container {
-  width: 75%
+  width: 75% !important;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
