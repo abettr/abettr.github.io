@@ -404,6 +404,15 @@ img {
   }
 }
 
+nav[data-toggle="toc"] {
+  top: 42px;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
 /* --- Footer --- */
 
 footer {
