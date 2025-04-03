@@ -43,7 +43,7 @@ body {
   overflow-wrap: break-word;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: calc(100% - 300px);
 }
 body > main {
