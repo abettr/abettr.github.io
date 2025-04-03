@@ -15,16 +15,17 @@ layout: base
         </div>
       {% endif %}
 
-      <div class="container-fluid">
+      <div class="page-content">
         <div class="row">
-          <aside class="col-md-5">
-            {% include toc.html html=content %}
-          </aside>
-          <div class="col-md-7">
-            {{ content }}
-          </div>
+            <aside class="col-md-5">
+                {% include toc.html html=content %}
+            </aside>
+            <div class="col-md-7">
+                {{ content }}
+            </div>
         </div>
-      </div>
+    </div>
+    
 
       {% if page.after-content %}
         <div class="after-content">
