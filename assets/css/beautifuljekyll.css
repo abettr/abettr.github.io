@@ -44,7 +44,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  max-width: calc(400%);
+  max-width: calc(100% -1000px);
+}
+.sidebar {
+  width: 1000px; /* Fixed width for sidebar */
 }
 body > main {
   flex: 1;
