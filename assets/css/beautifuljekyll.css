@@ -44,17 +44,15 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  max-width: calc(100% -1000px);
+  max-width: calc(100%);
 }
-.sidebar {
-  width: 1000px; /* Fixed width for sidebar */
-}
+
 body > main {
   flex: 1;
 }
 p {
   line-height: 1.5;
-  margin: 1.875rem 0;
+  margin: 6.875rem 0;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--header-font);
