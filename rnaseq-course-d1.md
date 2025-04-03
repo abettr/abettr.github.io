@@ -3,9 +3,17 @@ title: "An introduction to Unix, NF-core & FASTQ prefetch"
 author: "Aimee Bettridge"
 editors: "Alex Gibbs, Robert Andrews"
 toc: true
-#full-width: true
+toc_float: true
+full-width: true
+}
 ---
-
+<style type="text/css">
+.main-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 <style>
   hr {
     box-sizing: border-box;
