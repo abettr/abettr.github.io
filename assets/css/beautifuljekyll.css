@@ -44,7 +44,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  max-width: calc(100% - 300px);
+  max-width: calc(100% + 500px);
 }
 body > main {
   flex: 1;
