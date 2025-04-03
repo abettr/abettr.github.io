@@ -16,7 +16,7 @@ layout: base
       {% endif %}
 
       <div class="page-content">
-        <div class="row">
+        <div class="row justify-content-center">
             <aside class="col-md-4">
                 {% include toc.html html=content %}
             </aside>
@@ -25,8 +25,7 @@ layout: base
             </div>
         </div>
     </div>
-    
-
+  
       {% if page.after-content %}
         <div class="after-content">
           {% for file in page.after-content %}
