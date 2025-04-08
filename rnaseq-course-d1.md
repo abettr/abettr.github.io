@@ -14,6 +14,7 @@ toc_sticky: true
     margin: 0;
   }
 </style>
+
 <hr style="border: 4px double #3E1628; background-color: #7B1F3F; height: 1px; width: 100%; margin: 0; border-radius: 10px;">
 <h1 style="font-size: 50px;">Day 1</h1>
 
@@ -51,25 +52,27 @@ You should expect to:
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 ## BASH scripting
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 * <font color="red">BASH scripts are ultimately not an efficient method of storing a workflow.</font> 
 <br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 # 2. An introduction to nf-core
---- 
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;"> 
+
 - A community-led framework which hosts a curated set of open-source analysis [pipelines](https://nf-co.re/pipelines/) built using Nextflow.
 - Includes >100 maintained pipelines and >1400 reusable modules that aim  to be accessible, well-documented, and easily understandable.
   - Adheres to [FAIR](https://fellowship.elixiruknode.org/latest/carpentries-course-fair-pointers) principles. 
 - Its ethos encompasses open-sourced, collaborative and supportive principles. Their seminars and training are free to join and they offer further support through their [slack](https://nf-co.re/join) channel.
 - **We will be using up-to-date nf-core pipelines for our analysis**. 
 <br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 ## 2.1. What is nextflow?
----
-- Both a workflow management system and a domain-speciifc language based on Java and Groovy, meaning it:
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
+
+Nextflow is Both a workflow management system and a domain-speciifc language based on Java and Groovy, meaning it:
   - Allows us to execute increasingly more complex tasks in the age of big data.
   - Runs several different tasks on Hawk automatically with minimal input. Convenient!
   - Organises our tasks through channels, allowing them to communicate with each other.
@@ -108,10 +111,11 @@ Parallel processing - performs many tasks independently and simultaneously.
 
 </details>
 <br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 ### 2.1.1. What you should know
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
+
 Everytime you execute or resume Nextflow a unique work directory based on a hash is created. This work directory is used to stage input files and scripts in addition to writing outputs for downstream tasks and/or publishing (desired outputs are copied over to our project input and output directories).
 
 You will find the Nextflow logfile and work directory from wherever you execute your nf-core pipeline. For example:
@@ -155,32 +159,28 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
     <a href="https://www.nextflow.io/docs/latest/index.html" style="color: #019E95; text-decoration: underline;">Nextflow</a> documents.
 </div>
 <br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 ## 2.2. nf-core/fetchngs Pipeline
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
+
 - This pipeline allows us to fetch metadata and raw FastQ files from public and private databases
 - The pipeline currently supports SRA/ENA/DDBJ/GEO/Synapse IDs.
 - The only input it needs is a list of accessions (sequence database IDs).
----
-
 <br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 ## Finding a dataset
----
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - We first need to find a dataset. Some of you may already have found one via a paper that you have read etc.
 - There are multiple repositories that we can find samples on. The two most common are **Gene Expression Omnibus ([GEO](https://www.ncbi.nlm.nih.gov/geo/))** and **[Array Express](https://www.ebi.ac.uk/biostudies/arrayexpress)**.
 - For this course, we will use **GEO** to find our dataset.
-
----
-
 <br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 #### GEO
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - When accessing the GEO website, we are faced with multiple links and tools.
 - If we have a dataset in mind that we would like to find, we can use the search bar at the top right of the page.
@@ -260,15 +260,11 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 - Some may be asking, isn't this the same as the BioProject ID link? Yes and no.
 - The BioProject ID link takes you to an overview page, just like the GEO page we are currently on.
 - The SRA Run Selector link takes us directly to the page where we can download the data.
-
----
-
 <br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 #### Downloading the relevant data
----
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - We will be downloading **6 normoxia** samples, 3 from each cell line.
 - To do this, we need to click on the **SRA Run Selector** link.
@@ -292,31 +288,24 @@ SRR23454126
 </span></pre>
 
 </details>
-
----
-
 <br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 # nf-core/fetchngs pipeline
----
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - To keep things as simple as possible for users, I have created a GitHub repository which contains all of the directory structures and relevant scripts to perform each task for us.
 - This will hopefully make things easier for users who are not so confident with coding.
-
 <br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 ### Log into HAWK
----
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - Lets first log onto HAWK. We will be doing all of our coding within VSCode.
 - <b>If you do not have VSCode set-up, please let me know now so that we can get you up and running.</b>
 - Note: those of you using Linux may have to use code to do this. I will include the code below each section.
-
----
+<br>
 - Firstly, make sure you are connected to the VPN. If you are on-campus, theres no need.
 - In VSCode, click on the 'Remote Explorer' button, then click 'Connect to Host in New Window' button. This opens a new VSCode window with the remote host.
 - You will be prompted (top box) to enter your password. Do this and hit enter.
@@ -333,11 +322,10 @@ ssh c.c1234567@hawklogin.cf.ac.uk
 ```
 
 <br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 ### Fetch the project from GitHub
----
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - To get the project directory from GitHub, we simply copy and paste one line of code below.
 - We will first want to **move into our scratch directory**.
@@ -373,11 +361,11 @@ git clone https://github.com/Gibbatron/rnaseq-course.git
 cd /scratch/c.c1234567
 git clone https://github.com/Gibbatron/rnaseq-course.git
 ```
+<br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 ### Set-up
----
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - We need to change permissions of the rnaseq-course directory so that any daughter files and directories will inherit the same permissions:
 - In the terminal window paste the following:
@@ -399,11 +387,11 @@ chmod +x *.sh
 - Note: You can move in- and out of directories using the explorer window. Right-clicking on the directory and clicking on 'Open in Integrated Terminal' will open the directory in the terminal window. There will be another section added to the terminal window on the right with two options. One named 'bash', the other named 'bash *rnaseq-course*'. The 'bash' option is where you originally were (your scratch directory) and the 'bash *rnaseq-course*' option is in the rnaseq-course directory. Clicking between these moves you to the subsequent directory and you will notice the terminal window changes with this too.
 
 <img src="assets/img/d1-fig4.png" alt="changing directories within VSCode" width="1000"/>
+<br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 #### Required files
----
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - Now that we have the permissions etc completed, we can now edit the required files needed for the fetchngs pipe.
 - You will see, by using the `ls` command, or clicking the drop down options on the directories that we have the following directory structure:
@@ -606,11 +594,11 @@ ctrl + x
 y
 enter
 ```
+<br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
----
 ## Executing the nf-core/prefetch pipeline
----
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - Now we have everything ready to execute the pipeline.
 - To run the pipeline, we need to be in the **parent directory (rnaseq-course)** directory.
@@ -627,7 +615,7 @@ enter
 
 </details>
 
----
+
 **Change to the cla1 node**
 
 ---
@@ -701,8 +689,6 @@ then press d
 
 - We will cover the outputs from this pipeline during the Day 2 session.
 
----
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;"><hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 # End of Day 1
----
----
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;"><hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
