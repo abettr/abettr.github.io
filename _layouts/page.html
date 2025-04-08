@@ -21,28 +21,52 @@ layout: base
             <aside class="col-md-4 toc-sticky">
                 <!-- Inline CSS to adjust the indentation for the TOC -->
                 <style>
-                    .toc-sticky {
-                        background-color: #250D18; /* Light grey background */
-                        border: 1px solid #250D18; /* Light border */
-                        border-radius: 12px;       /* Rounded corners */
-                        padding: 15px 20px;
-                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-                        max-height: 80vh;
-                        overflow-y: auto;
-                    }
-                    .toc-sticky ul ul, .toc-sticky ol ol {
-                        margin-left: 10px;  /* Adjust this value for tighter or wider spacing */
-                        padding-left: 10px; /* Adjust this value for tighter or wider spacing */
-                    }
-                    .toc-sticky a {
+                  /* Scope everything to .toc-sticky only */
+                  .toc-sticky {
+                      background-color: #250D18;
+                      border: 1px solid #250D18;
+                      border-radius: 12px;
+                      padding: 15px 20px;
+                      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+                      max-height: 80vh;
+                      overflow-y: auto;
+                  }
+              
+                  .toc-sticky ul {
+                      list-style-type: disc;
+                      color: #DEABA0;
+                      padding-left: 1.2em;
+                  }
+              
+                  .toc-sticky ul ul {
+                      list-style-type: circle;
+                      color: #DEABA0;
+                      padding-left: 1.2em;
+                  }
+              
+                  .toc-sticky li::marker {
+                      color: #DEABA0;
+                  }
+              
+                  .toc-sticky a {
                       font-weight: bold;
                       color: #DEABA0;
-                    }
-                    .toc-sticky a:hover {
+                      text-decoration: none;
+                      display: block;
+                      padding: 3px 0;
+                      transition: color 0.3s ease;
+                  }
+              
+                  .toc-sticky a:hover {
                       color: #DE7B21;
                       text-decoration: underline;
-                    }
-                </style>
+                  }
+              
+                  .toc-sticky li:not(:has(a)) {
+                      color: #DEABA0;
+                  }
+              </style>
+              
                 {% include toc.html html=content %}
             </aside>
   
