@@ -15,22 +15,28 @@ layout: base
         </div>
       {% endif %}
 
-<div class="page-content">
-  <div class="row justify-content-center">
-      <!-- Table of Contents (TOC) -->
-      <aside class="col-md-4 toc-sticky">
-          
-          <!-- Inline CSS to adjust the indentation for the TOC -->
-          <style>
-            .toc-sticky ul ul, .toc-sticky ol ol {
-                margin-left: 10px;  /* Adjust this value for tighter or wider spacing */
-                padding-left: 10px; /* Adjust this value for tighter or wider spacing */
-            }
-          </style>
-          
-          {% include toc.html html=content %}
-      </aside>
+      <div class="page-content">
+        <div class="row justify-content-center">
+            <!-- Table of Contents (TOC) -->
+            <aside class="col-md-4 toc-sticky">
+                <!-- Inline CSS to adjust the indentation for the TOC -->
+                <style>
+                    .toc-sticky ul ul, .toc-sticky ol ol {
+                        margin-left: 10px;  /* Adjust this value for tighter or wider spacing */
+                        padding-left: 10px; /* Adjust this value for tighter or wider spacing */
+                    }
+                </style>
+                {% include toc.html html=content %}
+            </aside>
   
+            <!-- Main content column -->
+            <div class="col-md-7">
+                <!-- The body content of the page -->
+                {{ content }}
+            </div>
+        </div>
+      </div>
+
       {% if page.after-content %}
         <div class="after-content">
           {% for file in page.after-content %}
