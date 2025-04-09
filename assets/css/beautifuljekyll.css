@@ -342,7 +342,7 @@ img {
 .navbar-custom .navbar-nav .nav-link:focus,
 .navbar-custom .navbar-nav .dropdown-menu .dropdown-item:hover,
 .navbar-custom .navbar-nav .dropdown-menu .dropdown-item:focus {
-  color: var(--hover-col);
+  color: "#DE7B21";
 }
 
 .navbar-custom .avatar-container {
