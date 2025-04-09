@@ -23,11 +23,13 @@ layout: base
           <aside class="col-md-4 toc-sticky">
               <style>
                   .toc-sticky {
-                      background-color: #7B1F3F;
-                      border: 1px solid #250D18;
+                      background-color: #3E1628;
+                      border: 3px solid #250D18; /* Thicker border */
                       border-radius: 12px;
                       padding: 15px 20px;
-                      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+                      box-shadow:
+                      0 0 0 3px #3E1628,  /* Fake inner glow to blend border with background */
+                      0 0 10px 4px rgba(37, 13, 24, 0.4); /* Outer glow for a subtle gradient-ish effect */
                       max-height: 80vh;
                       overflow-y: auto;
                   }
