@@ -32,7 +32,7 @@ layout: base
                           0 0 10px 4px rgba(37, 13, 24, 0.3);    /* outer shadow for depth */
                       max-height: 80vh;
                       overflow-y: auto;
-                      scrollbar-color: #DE7B21 #250D18;
+                      scrollbar-color: #DE7B21 rgba(37, 13, 24, 0);
                   }
       
                   .toc-sticky ul {
@@ -69,7 +69,7 @@ layout: base
                       color: #DEABA0;
                   }
 
-                  /* Custom scrollbar styles */
+                  /* Custom scrollbar styles to work in other web browsers (not Firefox)*/
                   .toc-sticky::-webkit-scrollbar {
                       width: 10px;  /* Width of the vertical scrollbar */
                   }
