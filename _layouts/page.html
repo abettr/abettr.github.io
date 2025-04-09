@@ -22,6 +22,15 @@ layout: base
           <!-- TOC on the left -->
           <aside class="col-md-4 toc-sticky">
               <style>
+                  /* Apply spacing only to the main content (not TOC) */
+                  .content-body ul, .content-body ol {
+                      margin-bottom: 20px; /* Adjust this as needed */
+                  }
+
+                  .content-body li {
+                      margin-bottom: 10px; /* Add spacing between list items */
+                  }
+
                   .toc-sticky {
                       background-color: #3E1628;
                       border: 3px solid #250D18;
