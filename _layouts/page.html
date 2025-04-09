@@ -23,13 +23,13 @@ layout: base
           <aside class="col-md-4 toc-sticky">
               <style>
                   .toc-sticky {
-                      background: radial-gradient(circle at center, #3E1628 70%, #250D18 100%);
+                      background-color: #3E1628;
                       border: 3px solid #250D18;
                       border-radius: 12px;
                       padding: 15px 20px;
                       box-shadow:
-                          inset 0 0 10px #250D18,  /* Thinner inner shadow for a subtle effect */
-                          0 0 10px 4px #250D18;    /* Outer shadow for depth */
+                          inset 0 0 20px rgba(37, 13, 24, 0.4),  /* inner shadow */
+                          0 0 10px 4px rgba(37, 13, 24, 0.3);    /* outer shadow for depth */
                       max-height: 80vh;
                       overflow-y: auto;
                   }
@@ -66,6 +66,25 @@ layout: base
       
                   .toc-sticky li:not(:has(a)) {
                       color: #DEABA0;
+                  }
+
+                  /* Custom scrollbar styles */
+                  .toc-sticky::-webkit-scrollbar {
+                      width: 10px;  /* Width of the vertical scrollbar */
+                  }
+
+                  .toc-sticky::-webkit-scrollbar-track {
+                      background-color: #250D18;  /* Dark background for the scrollbar track */
+                      border-radius: 10px;  /* Rounded corners for the scrollbar track */
+                  }
+
+                  .toc-sticky::-webkit-scrollbar-thumb {
+                      background-color: #DE7B21;  /* Thumb color (the part you drag) */
+                      border-radius: 10px;  /* Rounded corners for the thumb */
+                  }
+
+                  .toc-sticky::-webkit-scrollbar-thumb:hover {
+                      background-color: #DE7B21;  /* Hover effect for the thumb */
                   }
               </style>
       
