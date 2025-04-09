@@ -161,7 +161,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-## 2.2. nf-core/fetchngs Pipeline
+# 3. nf-core/fetchngs Pipeline
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - This pipeline allows us to fetch metadata and raw FastQ files from public and private databases
@@ -170,7 +170,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-## Finding a dataset
+## 3.1. Finding a dataset
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - We first need to find a dataset. Some of you may already have found one via a paper that you have read etc.
@@ -179,7 +179,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-#### GEO
+### 3.1.1. GEO
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - When accessing the GEO website, we are faced with multiple links and tools.
@@ -263,7 +263,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-#### Downloading the relevant data
+### 3.1.2. Downloading the relevant data
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - We will be downloading **6 normoxia** samples, 3 from each cell line.
@@ -291,7 +291,7 @@ SRR23454126
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-# nf-core/fetchngs pipeline
+   nf-core/fetchngs pipeline
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - To keep things as simple as possible for users, I have created a GitHub repository which contains all of the directory structures and relevant scripts to perform each task for us.
@@ -299,7 +299,7 @@ SRR23454126
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-### Log into HAWK
+### 3.1.3. Log into HAWK
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - Lets first log onto HAWK. We will be doing all of our coding within VSCode.
@@ -324,7 +324,7 @@ ssh c.c1234567@hawklogin.cf.ac.uk
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-### Fetch the project from GitHub
+### 3.1.4. Fetch the project from GitHub
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - To get the project directory from GitHub, we simply copy and paste one line of code below.
@@ -364,7 +364,7 @@ git clone https://github.com/Gibbatron/rnaseq-course.git
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-### Set-up
+### 3.1.5. Set-up
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - We need to change permissions of the rnaseq-course directory so that any daughter files and directories will inherit the same permissions:
@@ -390,7 +390,7 @@ chmod +x *.sh
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-#### Required files
+  Required files
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - Now that we have the permissions etc completed, we can now edit the required files needed for the fetchngs pipe.
@@ -426,7 +426,7 @@ chmod +x *.sh
 
 <br>
 
-###### resources/ids.csv
+     resources/ids.csv
 
 - Now that we have the sample IDs, we can go ahead and add them to the `ids.csv` file.
 - This file is a comma-separated value (.csv) file that contains the list of the sample IDs that we just downloaded.
@@ -514,7 +514,7 @@ enter
 
 <br>
 
-###### resources/fetchngs-params.yaml
+     resources/fetchngs-params.yaml
 
 - This file contains all of the parameters needed for the pipeline to run.
 - Instead of adding all of the options into the code when executing the pipeline, we can add them into this file. This keeps things tidier and easier to troubleshoot.
@@ -546,7 +546,7 @@ enter
 
 <br>
 
-###### resources/my.config
+     resources/my.config
 
 - This file contains all of the configuration code required for the pipeline to run correctly on HAWK.
 
@@ -597,7 +597,7 @@ enter
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-## Executing the nf-core/prefetch pipeline
+## 3.2. Executing the nf-core/prefetch pipeline
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - Now we have everything ready to execute the pipeline.
@@ -690,5 +690,5 @@ then press d
 - We will cover the outputs from this pipeline during the Day 2 session.
 
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;"><hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
-# End of Day 1
+    End of Day 1
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;"><hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
