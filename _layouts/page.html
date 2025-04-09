@@ -17,8 +17,9 @@ layout: base
 
       <div class="page-content">
         <div class="row justify-content-center">
+          
           {% if page.toc %}
-          <!-- Table of Contents (TOC) -->
+          <!-- TOC on the left -->
           <aside class="col-md-4 toc-sticky">
               <style>
                   .toc-sticky {
@@ -69,16 +70,13 @@ layout: base
               {% include toc.html html=content %}
           </aside>
           {% endif %}
-        </div>
-      </div>
       
-            <!-- Main content column -->
-            <div class="col-md-7">
-                <!-- The body content of the page -->
-                {{ content }}
-            </div>
+          <!-- Main content on the right -->
+          <div class="col-md-8">
+              {{ content }}
+          </div>
         </div>
-      </div>
+      </div>      
 
       {% if page.after-content %}
         <div class="after-content">
