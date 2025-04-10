@@ -19,27 +19,27 @@ layout: base
         <div class="row justify-content-center">
           <style>
             /* Add space before the first level bullet point after an <hr> */
-            .page-content hr + ul > li:first-child,
-            .page-content hr + ol > li:first-child {
+            .content-body hr + ul > li:first-child,
+            .content-body hr + ol > li:first-child {
                 margin-top: 1.5em;
             }
 
             /* Add space after the last first-level list item */
-            .page-content ul > li:last-child,
-            .page-content ol > li:last-child {
+            .content-body ul > li:last-child,
+            .content-body ol > li:last-child {
                 margin-bottom: 1.5em;
             }
 
             /* Remove margins from nested (second-level) list items */
-            .page-content ul > li > ul > li, 
-            .page-content ol > li > ol > li {
+            .content-body ul > li > ul > li, 
+            .content-body ol > li > ol > li {
                 margin-top: 0; /* Remove top margin from second-level list items */
                 margin-bottom: 0; /* Remove bottom margin from second-level list items */
             }
 
             /* Ensure no extra space between first-level and second-level list items */
-            .page-content ul > li > ul,
-            .page-content ol > li > ol {
+            .content-body ul > li > ul,
+            .content-body ol > li > ol {
                 margin-top: 0; /* Prevent unwanted space between first-level and second-level items */
                 margin-bottom: 0; /* Optional: Adjust padding for nested items to create indentation */
             }
