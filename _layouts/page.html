@@ -17,7 +17,12 @@ layout: base
 
       <div class="page-content">
         <div class="row justify-content-center">
-        
+          <style>
+            .content-body ul.followed-by-hr .content-body li:last-child {
+              margin-bottom: 19px;
+            }
+          </style>
+          
           {% if page.toc %}
           <!-- TOC on the left -->
           <aside class="col-md-4 toc-sticky">
