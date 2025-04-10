@@ -30,11 +30,16 @@ layout: base
                 margin-bottom: 29px;
             }
 
-            /* Prevent the margin from applying to second-level bullet points */
-            .page-content ul li, 
-            .page-content ol li {
-                margin-top: 0; /* Remove any extra margin on nested list items */
-                margin-bottom: 0; /* Remove any extra margin on nested list items */
+            /* Remove margin from second-level (nested) list items */
+            .page-content ul li ul > li, 
+            .page-content ol li ol > li {
+                margin-bottom: 0;
+            }
+
+            /* Prevent margin below the second-level bullet points (nested) */
+            .page-content ul li > ul, 
+            .page-content ol li > ol {
+                margin-top: 0; /* Prevent extra space between first-level and second-level items */ 
             }
           </style>
           
