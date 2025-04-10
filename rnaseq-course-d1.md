@@ -78,7 +78,8 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
   - Organises our tasks through channels, allowing them to communicate with each other.
 <br>
 *Channels commonly convey data inpts and outputs between processes to get to the final product:*
-<img src="assets/img/channel-process.png" alt="" width="1000"/>
+
+<img src="./assets/img/channel-process.png" alt="" width="1000"/>
 <br>
 <details>
 <summary><b>Nextflow boasts many other benefits...</b></summary>
@@ -86,27 +87,21 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 <br>
 
 Each task can be written in virtually any coding language.
-
 <br>
 
 Is portable (compatible across platforms and job schedulers on the supercomputer).
-
 <br>
 
 Is reproducible through containerisation and version control.
-
 <br>
 
 Is highly customisable.
-
 <br>
 
 Easily resume work from any checkpoint.
-
 <br> 
 
 Parallel processing - performs many tasks independently and simultaneously.
-
 <br>
 
 </details>
