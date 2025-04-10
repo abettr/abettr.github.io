@@ -16,7 +16,7 @@ toc_sticky: true
 </style>
 
 <hr style="border: 4px double #3E1628; background-color: #7B1F3F; height: 1px; width: 100%; margin: 0; border-radius: 10px;">
-<h1 id="day1" style="font-size: 50px;">Day 1</h1>
+<h1 id="day1" style="font-size: 46px;">Day 1</h1>
 
 *Written by:* *{{ page.author }}*  
 *Editors:* *{{ page.editors }}*
