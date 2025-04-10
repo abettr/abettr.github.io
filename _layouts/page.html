@@ -18,8 +18,20 @@ layout: base
       <div class="page-content">
         <div class="row justify-content-center">
           <style>
-            .content-body ul.followed-by-hr .content-body li:last-child {
-              margin-bottom: 19px;
+            .page-content hr + ul li:first-child,
+            .page-content hr + ol li:first-child {
+                margin-top: 29px;
+            }
+
+            .page-content ul li:last-child:has(+ hr),
+            .page-content ol li:last-child:has(+ hr) {
+                margin-bottom: 29px;
+            }
+
+            /* Fallback if `:has()` isn't supported */
+            .page-content ul li:last-child,
+            .page-content ol li:last-child {
+                margin-bottom: 29px;
             }
           </style>
           
