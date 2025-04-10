@@ -45,7 +45,7 @@ You should expect to:
 ## *iii.* What we will not do here
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-- Cover how RNA-seq libraries are generated and next generation sequencing (NGS). Watch this [video](https://www.youtube.com/watch?v=tlf6wYJrwKY) for an overview.
+- Cover how RNA-seq libraries are generated and next generation sequencing (NGS). Watch this **[video](https://www.youtube.com/watch?v=tlf6wYJrwKY)** for an overview.
 - Cover more advanced sequencing technologies (e.g. scRNA-seq). We also provide training in scRNA-seq analysis.
 - Overburden you with too much information; we will signpost towards further reading and support where appropriate.
 <br>
@@ -61,10 +61,10 @@ You should expect to:
 # 2. An introduction to nf-core
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;"> 
 
-- A community-led framework which hosts a curated set of open-source analysis [pipelines](https://nf-co.re/pipelines/) built using Nextflow.
+- A community-led framework which hosts a curated set of open-source analysis **[pipelines](https://nf-co.re/pipelines/)** built using Nextflow.
 - Includes >100 maintained pipelines and >1400 reusable modules that aim  to be accessible, well-documented, and easily understandable.
-  - Adheres to [FAIR](https://fellowship.elixiruknode.org/latest/carpentries-course-fair-pointers) principles. 
-- Its ethos encompasses open-sourced, collaborative and supportive principles. Their seminars and training are free to join and they offer further support through their [slack](https://nf-co.re/join) channel.
+  - Adheres to **[FAIR](https://fellowship.elixiruknode.org/latest/carpentries-course-fair-pointers)** principles. 
+- Its ethos encompasses open-sourced, collaborative and supportive principles. Their seminars and training are free to join and they offer further support through their **[slack](https://nf-co.re/join)** channel.
 - **We will be using up-to-date nf-core pipelines for our analysis**. 
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
