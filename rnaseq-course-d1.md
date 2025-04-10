@@ -140,20 +140,19 @@ File name|Description|Useful how?
 .command.log|Combined standard output & error|Get a full picture of what went wrong
 </details>
 
-<br>
 The nextflow logfile (.nextflow.log) is handy to view the total pipeline execution history and can shed light on potential errors, resource usage, time to completion and task submission details.
 
-<br>
-<br>
-<div style="background-color:#250D18; border-top: 37px solid #7B1F3F; padding: 10px 16px 10px; color: #DEABA0; position: relative;">
+<div style="position: relative; margin-top: 2rem;">
+  <div style="background-color:#250D18; border-top: 37px solid #7B1F3F; padding: 10px 16px 10px; color: #DEABA0; position: relative;">
     <span style="position: absolute; top: -30px; left: 1px; font-weight: bold; color: #DEABA0; background-color: #7B1F3F; padding: 5px 10px; line-height: 20px; display: inline-block; border-radius: 4px;">
-        &#128221; Note:
+      &#128221; Note:
     </span>
     Learning Nextflow from scratch can be daunting. We will not go into unnecessary detail here, though there are several good resources and training opportunities we recommend through 
     <a href="https://arcca.github.io/index.html#register-for-future-courses" style="color: #019E95; text-decoration: underline;">ARCCA</a>, <a href="https://nf-co.re/events/training" style="color:  #019E95; text-decoration: underline;">nf-core</a>, and 
     <a href="https://www.nextflow.io/docs/latest/index.html" style="color: #019E95; text-decoration: underline;">Nextflow</a> documents.
+  </div>
 </div>
-<br>
+
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 # 3. nf-core/fetchngs Pipeline
