@@ -103,6 +103,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 
 * *Parallel processing - performs many tasks independently and simultaneously.*
 </details>
+<br style="margin-bottom: 1.5rem;">
 
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
@@ -150,7 +151,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
     <a href="https://www.nextflow.io/docs/latest/index.html" style="color: #019E95; text-decoration: underline;">Nextflow</a> documents.
   </div>
 </div>
-<br style="margin-bottom: 1.5rem;"> 
+<br style="margin-bottom: 0.5rem;"> 
 
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
