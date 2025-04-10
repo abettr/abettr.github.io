@@ -21,7 +21,7 @@ layout: null
   /* common CSS variables */
   --body-font: 'Lora', 'Times New Roman', serif;
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --mid-col: #250D18;
+  --mid-col: #808080;
 }
 
 /* --- General --- */
@@ -876,8 +876,8 @@ table tr td :last-child {
 
 code {
   padding: 0.125rem 0.25rem;
-  color: #c7254e;
-  background-color: #f9f2f4;
+  color: #7B1F3F;
+  background-color: #250D18;
   border-radius: 0.25rem;
 }
 
