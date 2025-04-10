@@ -20,13 +20,29 @@ author: Aimee Bettridge
 ###############################################
 
 navbar-links:
-  About Us: https://walesgenepark.cardiff.ac.uk/en/home/
-  RNAseq Course:
-    - Pre-course: "rnaseq-course-pre"
-    - Day 1: "rnaseq-course-d1"
-    - Day 2: "rnaseq-course-d2"
-    - Day 3: "rnaseq-course-d3"
-    - Day 4: "rnaseq-course-d4"
+  - name: Welcome
+    url: /
+    aria-label: "Home"
+  - name: About Us
+    url: https://walesgenepark.cardiff.ac.uk/en/home/
+    aria-label: "About Wales Gene Park"
+  - name: RNAseq Course
+    dropdown:
+      - name: Pre-course
+        url: rnaseq-course-pre
+        aria-label: "Pre-course materials"
+      - name: Day 1
+        url: rnaseq-course-d1
+        aria-label: "Day 1 materials"
+      - name: Day 2
+        url: rnaseq-course-d2
+        aria-label: "Day 2 materials"
+      - name: Day 3
+        url: rnaseq-course-d3
+        aria-label: "Day 3 materials"
+      - name: Day 4
+        url: rnaseq-course-d4
+        aria-label: "Day 4 materials"
 
 ################
 # --- Logo --- #
