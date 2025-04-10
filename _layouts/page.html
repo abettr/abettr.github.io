@@ -22,6 +22,27 @@ layout: base
           <!-- TOC on the left -->
           <aside class="col-md-4 toc-sticky">
               <style>
+                  /* General margin and padding for top-level lists */
+                  .content-body ul, .content-body ol {
+                      margin-top: 29px !important;
+                      margin-bottom: 29px !important;
+                      padding-left: 1.2em; /* Standardize padding for outer list */
+                  }
+
+                  /* Remove margins and padding for list items */
+                  .content-body ul li, .content-body ol li {
+                      margin-top: 0 !important;
+                      margin-bottom: 0 !important;
+                      padding: 0 !important;
+                  }
+
+                  /* For nested lists, reset margin and padding to prevent extra space */
+                  .content-body ul ul li, .content-body ol ol li {
+                      margin-top: 0 !important;
+                      margin-bottom: 0 !important;
+                      padding: 0 !important;
+                  }
+
                   /* Apply padding between first and last list items */
                   .content-body ul li:first-child, .content-body ol li:first-child {
                       padding-top: 29px !important;
@@ -29,7 +50,22 @@ layout: base
 
                   .content-body ul li:last-child, .content-body ol li:last-child {
                       padding-bottom: 29px !important;
-                  } 
+                  }
+
+                  /* For deeper nested lists (level 3 or more), reset any unwanted spacing */
+                  .content-body ul ul ul li, .content-body ol ol ol li {
+                      margin-top: 0 !important;
+                      margin-bottom: 0 !important;
+                      padding-left: 20px !important; /* Adjust indent for deeper nested lists */
+                  }
+
+                  /* Ensure no additional spacing from inherited styles */
+                  .content-body li {
+                      margin-top: 0 !important;
+                      margin-bottom: 0 !important;
+                      padding-top: 0 !important;
+                      padding-bottom: 0 !important;
+                  }
 
                   .toc-sticky {
                       background-color: #3E1628;
