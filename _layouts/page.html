@@ -18,30 +18,28 @@ layout: base
       <div class="page-content">
         <div class="row justify-content-center">
           <style>
-            /* Add space before the first list item after an <hr> */
+            /* Add space before the first level bullet point after an <hr> */
             .page-content hr + ul > li:first-child,
             .page-content hr + ol > li:first-child {
-                margin-top: 29px;
+                margin-top: 1.5em;
             }
 
-            /* Add space after the last list item (first-level) */
+            /* Add space after the last first-level list item */
             .page-content ul > li:last-child,
             .page-content ol > li:last-child {
-                margin-bottom: 29px;
+                margin-bottom: 1.5em;
             }
 
-            /* Remove margin from second-level (nested) list items */
-            .page-content ul li ul > li, 
-            .page-content ol li ol > li {
+            /* Remove margin from second-level (nested) bullet points */  
+            .page-content ul > li > ul > li, 
+            .page-content ol > li > ol > li {
                 margin-bottom: 0;
-                margin-top: 0;
             }
 
-            /* Prevent margin below the second-level bullet points (nested) */
-            .page-content ul li > ul, 
-            .page-content ol li > ol {
-                margin-top: 0; /* Prevent extra space between first-level and second-level items */ 
-                margin-bottom: 0; /* Prevent extra space below the second-level items */
+            /* Ensure no extra margin between first and second level */
+            .page-content ul > li > ul,
+            .page-content ol > li > ol {
+                margin-top: 0; /* Prevent unwanted space between first-level and nested items */
             }
           </style>
           
