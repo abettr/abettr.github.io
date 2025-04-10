@@ -151,7 +151,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
   </div>
 </div>
 
-<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 1.5rem;">
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 2rem;">
 
 # 3. nf-core/fetchngs Pipeline
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
