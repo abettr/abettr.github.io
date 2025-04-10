@@ -30,16 +30,18 @@ layout: base
                 margin-bottom: 1.5em;
             }
 
-            /* Remove margin from second-level (nested) bullet points */  
+            /* Remove margins from nested (second-level) list items */
             .page-content ul > li > ul > li, 
             .page-content ol > li > ol > li {
-                margin-bottom: 0;
+                margin-top: 0; /* Remove top margin from second-level list items */
+                margin-bottom: 0; /* Remove bottom margin from second-level list items */
             }
 
-            /* Ensure no extra margin between first and second level */
+            /* Ensure no extra space between first-level and second-level list items */
             .page-content ul > li > ul,
             .page-content ol > li > ol {
-                margin-top: 0; /* Prevent unwanted space between first-level and nested items */
+                margin-top: 0; /* Prevent unwanted space between first-level and second-level items */
+                padding-left: 20px; /* Optional: Adjust padding for nested items to create indentation */
             }
           </style>
           
