@@ -79,7 +79,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 <br>
 *Channels commonly convey data inpts and outputs between processes to get to the final product:*
 
-<img src="./assets/img/channel-process.png" alt="" width="1000"/>
+<img src="/assets/img/channel-process.png" alt="" width="1000"/>
 <br>
 <details>
 <summary><b>Nextflow boasts many other benefits...</b></summary>
@@ -180,25 +180,25 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 - When accessing the GEO website, we are faced with multiple links and tools.
 - If we have a dataset in mind that we would like to find, we can use the search bar at the top right of the page.
 
-<img src="assets/img/figure-9.png" alt="GEO Homepage" width="1000"/>
+<img src="/assets/img/figure-9.png" alt="GEO Homepage" width="1000"/>
 
 - I would like to find a bulk rna seq dataset on renal cell carcinoma. To do this, I enter '**renal cell carcinoma rna seq**' into the search bar and click 'search'.
 - A pop-up window appears telling me that there are 351 results. Clicking on the '351' will load the results.
 
-<img src="assets/img/figure-10.png" alt="using GEO search bar" width="1000"/>
+<img src="/assets/img/figure-10.png" alt="using GEO search bar" width="1000"/>
 
 - On the results page, we are greeted with the results accompanied by further optional filters on the left and right hand side of the page.
 
-<img src="assets/img/figure-11.png" alt="Results page" width="1000"/>
+<img src="/assets/img/figure-11.png" alt="Results page" width="1000"/>
 
 - Here, we will choose to filter for **Homo sapiens** using the option on the right hand side and then browse for an interesting dataset.
 - For this course, I found a nice dataset looking at the effects of hypoxia on gene expression across two different cell lines.
 
-<img src="assets/img/figure-12.png" alt="Dataset that we will be using" width="1000"/>
+<img src="/assets/img/figure-12.png" alt="Dataset that we will be using" width="1000"/>
 
 - Clicking on the dataset title will load the series record for that dataset. Can everyone follow this [link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225253) and follow along.
 
-<img src="assets/img/figure-13.png" alt="GEO series record" width="500"/>
+<img src="/assets/img/figure-13.png" alt="GEO series record" width="500"/>
 
 - The dataset series record page displays the all the relevant information about that dataset.
 - Towards the top of the page, you will find information about the study in which the dataset was used.
@@ -217,7 +217,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 
 <br>
 
-<img src="assets/img/figure-14.png" alt="Analyze with GEO2R tool" width="1000"/>
+<img src="/assets/img/figure-14.png" alt="Analyze with GEO2R tool" width="1000"/>
 
 </details>
 
@@ -232,7 +232,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 
 <br>
 
-<img src="assets/img/figure-15.png" alt="Download RNA-seq counts" width="1000"/>
+<img src="/assets/img/figure-15.png" alt="Download RNA-seq counts" width="1000"/>
 
 </details>
 
@@ -268,7 +268,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
   3) Once all samples are selected, we can now click on the **sliding Selected tab** so move it to the right. This filters the data to include only the samples we have selected.
   4) Now we can click on the **Accession list** option. This downloads a text file called **SRR_Acc_List.txt**.
 
-<img src="assets/img/figure-16.png" alt="SRA Run Selector" width="1000"/>
+<img src="/assets/img/figure-16.png" alt="SRA Run Selector" width="1000"/>
 
 <details>
 <summary><b>SRR_Acc_List.txt</b></summary>
@@ -306,7 +306,7 @@ SRR23454126
 - You will be prompted (top box) to enter your password. Do this and hit enter.
 - You are now connected to HAWK.
 
-<img src="assets/img/pre-3.png" alt="Connecting to HAWK" width="1000"/>
+<img src="/assets/img/pre-3.png" alt="Connecting to HAWK" width="1000"/>
 
 
 ***Linux Users***
@@ -329,12 +329,12 @@ ssh c.c1234567@hawklogin.cf.ac.uk
 - You may be prompted 'Do you trust the authors this folder?'. Click 'Trust all authors' or 'Yes'.
 - You will now see that the directory will be open on the left of the window. Note: Most of you won't have anything here as you have not used HAWK or scratch before. Mine is populated with various directories.
 
-<img src="assets/img/d1-fig1.png" alt="Connecting to HAWK and navigating to scratch directory" width="1000"/>
+<img src="/assets/img/d1-fig1.png" alt="Connecting to HAWK and navigating to scratch directory" width="1000"/>
 
 - We next want to fetch the project from GitHub. To do this, we need a terminal window open so we can paste the code into.
 - Click on 'Terminal' at the top of your screen and select 'New Terminal'. This will open a terminal window at the bottom of your VSCode window.
 
-<img src="assets/img/d1-fig2.png" alt="Opening a terminal window in VSCode" width="1000"/>
+<img src="/assets/img/d1-fig2.png" alt="Opening a terminal window in VSCode" width="1000"/>
 
 - Now we can simply paste the following code into the terminal and hit enter:
 
@@ -345,7 +345,7 @@ git clone https://github.com/Gibbatron/rnaseq-course.git
 - To double check if the directory has been downloaded, we can use the `ls` command.
 - We should also see that the directory is now in the 'Explorer' window on the left. This may not be the case. To update the window, we can simply click the 'Refresh Explorer' button.
 
-<img src="assets/img/d1-fig3.png" alt="Pulling the project from GitHub" width="1000"/>
+<img src="/ssets/img/d1-fig3.png" alt="Pulling the project from GitHub" width="1000"/>
 
 - To see the contents of the downloaded directory, you can click on it to expand, or use the drop-down arrow next to it.
 
@@ -381,7 +381,7 @@ chmod +x *.sh
 - Note: When changing directories within the terminal window, **the explorer window does not update as you go**, neither does it update if you click the refresh button.
 - Note: You can move in- and out of directories using the explorer window. Right-clicking on the directory and clicking on 'Open in Integrated Terminal' will open the directory in the terminal window. There will be another section added to the terminal window on the right with two options. One named 'bash', the other named 'bash *rnaseq-course*'. The 'bash' option is where you originally were (your scratch directory) and the 'bash *rnaseq-course*' option is in the rnaseq-course directory. Clicking between these moves you to the subsequent directory and you will notice the terminal window changes with this too.
 
-<img src="assets/img/d1-fig4.png" alt="changing directories within VSCode" width="1000"/>
+<img src="/assets/img/d1-fig4.png" alt="changing directories within VSCode" width="1000"/>
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
@@ -481,7 +481,7 @@ input7,input8,input9
 - This will load the file into the main window as a table rather than its native format - this will make it easier for you to edit and understand the structure of the file.
 - I would reccomend just clicking on it to open though, as the file has only one column.
 
-<img src="assets/img/d1-fig5.png" alt="Opening a .csv file" width="1000"/>
+<img src="/assets/img/d1-fig5.png" alt="Opening a .csv file" width="1000"/>
 
 - With the file open, delete the text in both rows and paste your IDs into the table.
 - Now save the table with `File > Save`.
@@ -671,9 +671,9 @@ module load singularity/singularity-ce/3.11.4
 
 - This will run the pipeline for us. Leave the pipeline run for a few minutes to ensure it is working, then we can close the session by doing the following:
 
-<img src="assets/img/d1-tmux.gif" alt="Opening a tmux session" width="1000"/>
+<img src="/assets/img/d1-tmux.gif" alt="Opening a tmux session" width="1000"/>
 
-<img src="assets/img/d1-fig6.png" alt="Executing the fetchngs pipeline" width="1000"/>
+<img src="/assets/img/d1-fig6.png" alt="Executing the fetchngs pipeline" width="1000"/>
 
 
 ```
