@@ -10,7 +10,10 @@
 ############################
 
 # Name of website
-title: Welcome
+title: 
+  - name: Welcome
+  - url: /
+  - aria-label: "Home"
 
 # Your name to show in the footer
 author: Aimee Bettridge
@@ -20,9 +23,6 @@ author: Aimee Bettridge
 ###############################################
 
 navbar-links:
-  - name: Welcome
-    url: /
-    aria-label: "Home"
   - name: About Us
     url: https://walesgenepark.cardiff.ac.uk/en/home/
     aria-label: "About Wales Gene Park"
