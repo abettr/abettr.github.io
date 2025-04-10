@@ -18,20 +18,22 @@ layout: base
       <div class="page-content">
         <div class="row justify-content-center">
           <style>
-            .page-content hr + ul li:first-child,
-            .page-content hr + ol li:first-child {
+            /* Add space before the first list item after an <hr> */
+            .page-content hr + ul > li:first-child,
+            .page-content hr + ol > li:first-child {
                 margin-top: 29px;
             }
 
-            .page-content ul li:last-child:has(+ hr),
-            .page-content ol li:last-child:has(+ hr) {
+            /* Add space after the last list item (first-level) */
+            .page-content ul > li:last-child,
+            .page-content ol > li:last-child {
                 margin-bottom: 29px;
             }
 
-            /* Fallback if `:has()` isn't supported */
-            .page-content ul li:last-child,
-            .page-content ol li:last-child {
-                margin-bottom: 29px;
+            /* Prevent the margin from applying to second-level bullet points */
+            .page-content ul li, 
+            .page-content ol li {
+                margin-bottom: 0; /* Remove any extra margin on nested list items */
             }
           </style>
           
