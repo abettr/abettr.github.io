@@ -10,10 +10,7 @@
 ############################
 
 # Name of website
-title: 
-  - name: Welcome
-  - url: /
-  - aria-label: "Home"
+title: Welcome
 
 # Your name to show in the footer
 author: Aimee Bettridge
