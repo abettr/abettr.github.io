@@ -37,6 +37,12 @@ layout: base
                 margin-bottom: 0; /* Remove bottom margin from second-level list items */
             }
 
+            /* Ensure no space after the last second-level item */
+            .content-body ul > li > ul > li:last-child,
+            .content-body ol > li > ol > li:last-child {
+                margin-bottom: 0; /* Remove any bottom margin from second-level items */
+            }
+
             /* Ensure no extra space between first-level and second-level list items */
             .content-body ul > li > ul,
             .content-body ol > li > ol {
