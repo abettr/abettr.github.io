@@ -21,7 +21,18 @@ layout: base
             .content-body ul, .content-body ol {
                 margin-top: 29px !important;
                 margin-bottom: 29px !important;
-            }   
+            }
+            
+            .content-body ul li, .content-body ol li {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                padding: 0 !important;
+            }
+
+            .content-body ul ul li, .content-body ol ol li {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+            }
           </style>
           
           {% if page.toc %}

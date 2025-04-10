@@ -105,7 +105,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 <br>
 
 </details>
-<br>
+
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 ### 2.1.1. What you should know
@@ -152,6 +152,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
     <a href="https://www.nextflow.io/docs/latest/index.html" style="color: #019E95; text-decoration: underline;">Nextflow</a> documents.
   </div>
 </div>
+<br> 
 
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
