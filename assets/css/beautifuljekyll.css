@@ -900,10 +900,10 @@ pre {
 }
 .highlight > pre {
   background-image: linear-gradient(
-    rgba(0,0,0,0.03), rgba(0,0,0,0.03) 1.5em, rgba(0,0,0,0.02) 1.5em, rgba(0,0,0,0.02) 3em);
+    rgba(37,13,24,0.03), rgba(37,13,24,0.03) 1.5em, rgba(37,13,24,0.02) 1.5em, rgba(37,13,24,0.02) 3em);
   background-size: auto 3em;
   background-position-y: 0.625rem;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(37,13,24,0.1);
   border-left: 0.4375rem solid #250D18;
 }
 .highlight > pre:not([class~="highlight"]) { /* code block with line number */
@@ -918,9 +918,13 @@ pre {
   margin: 0;
 }
 .highlight pre.lineno {
-  color: rgba(0,0,0,0.3);
+  color: rgba(37,13,24,0.3);
   border-radius: 0;
   border-right: 2px solid #250D18;
+}
+
+pre, pre code {
+  color: #250D18; /* or any color you prefer */
 }
 
 aside {
