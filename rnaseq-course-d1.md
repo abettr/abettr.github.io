@@ -88,7 +88,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
     <b>Nextflow boasts many other benefits...</b>
   </summary>
 
-  <ul>
+  <ul style="margin-bottom: 0;">
     <li><em>Each task can be written in virtually any coding language.</em></li>
     <li><em>Is portable (compatible across platforms and job schedulers on the supercomputer).</em></li>
     <li><em>Is reproducible through containerisation and version control.</em></li>
@@ -98,7 +98,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
   </ul>
 </details>
 
-<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 0rem;">
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 1.5rem;">
 
 ### 2.1.1. What you should know
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
