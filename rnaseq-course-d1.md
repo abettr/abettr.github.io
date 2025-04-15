@@ -80,7 +80,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 
 *Channels commonly convey data inpts and outputs between processes to get to the final product:*
 
-<img src="/assets/img/AB_Nextflow.png" alt="A simple Nextflow workflow example" width="1000"/>
+<img src="/assets/img/AB_Nextflow.png" alt="A simple Nextflow workflow example" width="900" height="auto"/>
 <br>
 <details>
 <summary><b>Nextflow boasts many other benefits...</b></summary>
