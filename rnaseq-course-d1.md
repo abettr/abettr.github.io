@@ -98,7 +98,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
   </ul>
 </details>
 
-<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 1.5rem;">
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 0.5rem;">
 
 ### 2.1.1. What you should know
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
