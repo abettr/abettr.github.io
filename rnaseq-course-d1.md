@@ -83,8 +83,8 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 <img src="/assets/img/AB_Nextflow.png" alt="A simple Nextflow workflow example"
      style="display: block; margin: 0 auto;" width="600" />
 <br>
-<details style="border: 2px solid #250D18; border-radius: 8px; padding: 1em; color: #DEABA0;">
-  <summary style="color: #DEABA0;"><b>Nextflow boasts many other benefits...</b></summary>
+<details style="border: 2px solid #DEABA0; border-radius: 8px; padding: 1em; color: #250D18;">
+  <summary style="color: #250D18;"><b>Nextflow boasts many other benefits...</b></summary>
 
   <ul>
     <li><em>Each task can be written in virtually any coding language.</em></li>
