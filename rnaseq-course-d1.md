@@ -140,31 +140,31 @@ reveals a very simplified expected Nextflow work directory structure containing 
     <table style="width: 100%; border-collapse: collapse; color: #DEABA0;">
       <thead>
         <tr>
-          <th style="border-bottom: 1px solid #DEABA0; padding: 0.5em;">File name</th>
-          <th style="border-bottom: 1px solid #DEABA0; padding: 0.5em;">Description</th>
-          <th style="border-bottom: 1px solid #DEABA0; padding: 0.5em;">Useful how?</th>
+          <th style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">File name</th>
+          <th style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Description</th>
+          <th style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Useful how?</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td style="padding: 0.5em;">.command.sh</td>
-          <td style="padding: 0.5em;">Script Nextflow uses to run a task</td>
-          <td style="padding: 0.5em;">Easier to spot syntax/variable issues</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.sh</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Script Nextflow uses to run a task</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Easier to spot syntax/variable issues</td>
         </tr>
         <tr>
-          <td style="padding: 0.5em;">.command.out</td>
-          <td style="padding: 0.5em;">Process standard output</td>
-          <td style="padding: 0.5em;">Check if process completed successfully</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.out</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Process standard output</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Check if process completed successfully</td>
         </tr>
         <tr>
-          <td style="padding: 0.5em;">.command.err</td>
-          <td style="padding: 0.5em;">Process standard error</td>
-          <td style="padding: 0.5em;">For reading warnings, errors, and debugging</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.err</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Process standard error</td>
+          <td style="border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">For reading warnings, errors, and debugging</td>
         </tr>
         <tr>
-          <td style="padding: 0.5em;">.command.log</td>
-          <td style="padding: 0.5em;">Combined standard output & error</td>
-          <td style="padding: 0.5em;">Get a full picture of what went wrong</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.log</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Combined standard output & error</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Get a full picture of what went wrong</td>
         </tr>
       </tbody>
     </table>
