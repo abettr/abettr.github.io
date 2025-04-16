@@ -136,7 +136,7 @@ reveals a very simplified expected Nextflow work directory structure containing 
     How to navigate these hidden files
   </summary>
 
-  <div style="border: 2px solid #DEABA0; border-radius: 6px; background-color: #250D18; padding: 0em; color: #DEABA0; margin-top: 0em; /* pulls it closer to the summary */ transition: margin-bottom 1.5">
+  <div style="border: 2px solid #DEABA0; border-radius: 6px; background-color: #250D18; padding: 0em; color: #DEABA0; margin-top: -1em; /* pulls it closer to the summary */ transition: margin-bottom 1.5">
     <table style="width: 100%; border-collapse: collapse; color: #DEABA0;">
       <thead>
         <tr>
