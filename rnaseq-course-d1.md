@@ -84,33 +84,12 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
      style="display: block; margin: 0 auto;" width="600" />
 <br>
 
-<details style="
-  font-family: Arial, sans-serif;
-  margin-bottom: 0;
-  color: #250D18;
-">
-  <summary style="
-    color: #DEABA0;
-    border: 2px solid #DEABA0;
-    border-radius: 6px;
-    padding: 0.5em;
-    margin-bottom: 1.5em;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: #250D18;
-  ">
+<details style="font-family: Arial, sans-serif; margin-bottom: 0; color: #250D18;">
+  <summary style="color: #DEABA0; border: 2px solid #DEABA0; border-radius: 6px; padding: 0.5em; margin-bottom: 1.5em; cursor: pointer; font-weight: bold; background-color: #250D18;">
     Nextflow boasts many other benefits...
   </summary>
 
-  <div style="
-    border: 2px solid #DEABA0;
-    border-radius: 6px;
-    background-color: #250D18;
-    padding: 0em;
-    color: #DEABA0;
-    margin-top: -2em; /* pulls it closer to the summary */
-    transition: margin-bottom 1.5
-  ">
+  <div style="border: 2px solid #DEABA0; border-radius: 6px; background-color: #250D18; padding: 0em; color: #DEABA0; margin-top: -2em; /* pulls it closer to the summary */ transition: margin-bottom 1.5">
     <ul style="margin: 1em 0 0 0; padding-left: 2em;">
       <li><em>Each task can be written in virtually any coding language.</em></li>
       <li><em>Is portable (compatible across platforms and job schedulers on the supercomputer).</em></li>
@@ -152,15 +131,44 @@ work
 ```
 reveals a very simplified expected Nextflow work directory structure containing final and/or intermediate data outputs and error files.
 <br>
-<details>
-<summary><b>How to navigate these hidden files</b></summary>
+<details style="font-family: Arial, sans-serif; margin-bottom: 0; color: #250D18;">
+  <summary style="color: #DEABA0; border: 2px solid #DEABA0; border-radius: 6px; padding: 0.5em; margin-bottom: 1.5em; cursor: pointer; font-weight: bold; background-color: #250D18;">
+    How to navigate these hidden files
+  </summary>
 
-File name|Description|Useful how?
-|:------:|:--------:|:----------:|
-.command.sh|Script Nextflow uses to run a task|Easier to spot syntax/variable issues
-.command.out|Process standard output|Prints results that would normally go to the terminal & check if process completed successfully
-.command.err|Process standard error|For reading warnings, errors, and debugging
-.command.log|Combined standard output & error|Get a full picture of what went wrong
+  <div style="border: 2px solid #DEABA0; border-radius: 6px; background-color: #250D18; padding: 0em; color: #DEABA0; margin-top: -2em; /* pulls it closer to the summary */ transition: margin-bottom 1.5">
+    <table style="width: 100%; border-collapse: collapse; color: #DEABA0;">
+      <thead>
+        <tr>
+          <th style="border-bottom: 1px solid #DEABA0; padding: 0.5em;">File name</th>
+          <th style="border-bottom: 1px solid #DEABA0; padding: 0.5em;">Description</th>
+          <th style="border-bottom: 1px solid #DEABA0; padding: 0.5em;">Useful how?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 0.5em;">.command.sh</td>
+          <td style="padding: 0.5em;">Script Nextflow uses to run a task</td>
+          <td style="padding: 0.5em;">Easier to spot syntax/variable issues</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.5em;">.command.out</td>
+          <td style="padding: 0.5em;">Process standard output</td>
+          <td style="padding: 0.5em;">Check if process completed successfully</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.5em;">.command.err</td>
+          <td style="padding: 0.5em;">Process standard error</td>
+          <td style="padding: 0.5em;">For reading warnings, errors, and debugging</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.5em;">.command.log</td>
+          <td style="padding: 0.5em;">Combined standard output & error</td>
+          <td style="padding: 0.5em;">Get a full picture of what went wrong</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </details>
 
 The nextflow logfile (.nextflow.log) is handy to view the total pipeline execution history and can shed light on potential errors, resource usage, time to completion and task submission details.
