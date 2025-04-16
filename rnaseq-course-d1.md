@@ -96,8 +96,8 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
     color: #DEABA0;
     border: 2px solid #DEABA0;
     border-radius: 6px;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
+    padding: 1em;
+    margin-bottom: 1em;
     cursor: pointer;
     font-weight: bold;
     font-family: Arial, sans-serif;
