@@ -106,7 +106,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
     Nextflow boasts many other benefits...
   </summary>
 
-  <ul style="margin: 0; padding-left: 1em;">
+  <ul style="margin-bottom: 0; padding-left: 1em;">
     <li><em>Each task can be written in virtually any coding language.</em></li>
     <li><em>Is portable (compatible across platforms and job schedulers on the supercomputer).</em></li>
     <li><em>Is reproducible through containerisation and version control.</em></li>
