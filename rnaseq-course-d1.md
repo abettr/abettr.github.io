@@ -95,7 +95,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
     <li><em>Is highly customisable.</em></li>
     <li><em>Easily resume work from any checkpoint.</em></li>
     <li><em>Parallel processing – performs many tasks independently and simultaneously.</em></li>
-  </ul>
+  </ul style="margin-bottom: 0;">
 </details>
 
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 0.5rem;">
