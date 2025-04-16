@@ -83,22 +83,22 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 <img src="/assets/img/AB_Nextflow.png" alt="A simple Nextflow workflow example"
      style="display: block; margin: 0 auto;" width="600" />
 <br>
-<details style="border: 2px solid #DEABA0; border-radius: 8px; padding: 1em; color: #250D18;">
-  <summary style="color: #250D18; border-bottom: 2px solid #DEABA0; padding-bottom: 0.5em; margin-bottom: 1em;">
+<details style="border: 2px solid #DEABA0; border-radius: 8px; padding: 1em; color: #250D18; margin-bottom: 0;">
+  <summary style="color: #250D18; border-bottom: 2px solid #DEABA0; padding-bottom: 0.5em; margin-bottom: 0.5em;">
     <b>Nextflow boasts many other benefits...</b>
   </summary>
 
-  <ul style="margin-bottom: 0;">
+  <ul style="margin: 0; padding: 0; list-style-position: inside;">
     <li><em>Each task can be written in virtually any coding language.</em></li>
     <li><em>Is portable (compatible across platforms and job schedulers on the supercomputer).</em></li>
     <li><em>Is reproducible through containerisation and version control.</em></li>
     <li><em>Is highly customisable.</em></li>
     <li><em>Easily resume work from any checkpoint.</em></li>
     <li><em>Parallel processing – performs many tasks independently and simultaneously.</em></li>
-  </ul style="margin-bottom: 0;">
+  </ul>
 </details>
 
-<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 0.5rem;">
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 0;">
 
 ### 2.1.1. What you should know
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
