@@ -132,7 +132,7 @@ work
 reveals a very simplified expected Nextflow work directory structure containing final and/or intermediate data outputs and error files.
 <br>
 <details style="font-family: Arial, sans-serif; margin-bottom: 0; color: #250D18;">
-  <summary style="color: #DEABA0; border: 2px solid #DEABA0; border-radius: 6px; padding: 0.5em; margin-bottom: 1.5em; cursor: pointer; font-weight: bold; background-color: #250D18;">
+  <summary style="color: #DEABA0; border: 2px solid #DEABA0; border-radius: 6px; padding: 0.5em; margin-bottom: 0em; cursor: pointer; font-weight: bold; background-color: #250D18;">
     How to navigate these hidden files
   </summary>
 
@@ -159,7 +159,7 @@ reveals a very simplified expected Nextflow work directory structure containing 
         <tr>
           <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.err</td>
           <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Process standard error</td>
-          <td style="border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">For reading warnings, errors, and debugging</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">For reading warnings, errors, and debugging</td>
         </tr>
         <tr>
           <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.log</td>
