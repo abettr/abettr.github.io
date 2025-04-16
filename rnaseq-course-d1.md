@@ -140,31 +140,31 @@ reveals a very simplified expected Nextflow work directory structure containing 
     <table style="width: 100%; border-collapse: separate; border-spacing: 0; color: #DEABA0; border: 2px solid #DEABA0; border-radius: 6px;">
       <thead>
         <tr>
-          <th style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">File name</th>
-          <th style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Description</th>
-          <th style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Useful how?</th>
+          <th style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">File name</th>
+          <th style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Description</th>
+          <th style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Useful how?</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.sh</td>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Script Nextflow uses to run a task</td>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Easier to spot syntax/variable issues</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.sh</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Script Nextflow uses to run a task</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Easier to spot syntax/variable issues</td>
         </tr>
         <tr>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.out</td>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Process standard output</td>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Check if process completed successfully</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.out</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Process standard output</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Check if process completed successfully</td>
         </tr>
         <tr>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.err</td>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Process standard error</td>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">For reading warnings, errors, and debugging</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.err</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Process standard error</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">For reading warnings, errors, and debugging</td>
         </tr>
         <tr>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.log</td>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Combined standard output & error</td>
-          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Get a full picture of what went wrong</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">.command.log</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Combined standard output & error</td>
+          <td style="font-weight: bold; border-bottom: 1px solid #DEABA0; border-top: 1px solid #DEABA0; border-left: 1px solid #DEABA0; border-right: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">Get a full picture of what went wrong</td>
         </tr>
       </tbody>
     </table>
