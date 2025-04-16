@@ -110,7 +110,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
     color: #DEABA0;
     margin-top: -2em; /* pulls it closer to the summary */
   ">
-    <ul style="margin: 1em 0 0 0; padding-left: 1em;">
+    <ul style="margin: 1em 0 0 0; padding-left: 2em;">
       <li><em>Each task can be written in virtually any coding language.</em></li>
       <li><em>Is portable (compatible across platforms and job schedulers on the supercomputer).</em></li>
       <li><em>Is reproducible through containerisation and version control.</em></li>
