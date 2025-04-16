@@ -83,11 +83,8 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 <img src="/assets/img/AB_Nextflow.png" alt="A simple Nextflow workflow example"
      style="display: block; margin: 0 auto;" width="600" />
 <br>
+
 <details style="
-  border: 2px solid #DEABA0;
-  border-radius: 8px;
-  padding: 0em;
-  background-color: #DEABA0;
   font-family: Arial, sans-serif;
   margin-bottom: 0;
   color: #250D18;
@@ -100,20 +97,28 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
     margin-bottom: 1.5em;
     cursor: pointer;
     font-weight: bold;
-    font-family: Arial, sans-serif;
     background-color: #250D18;
   ">
     Nextflow boasts many other benefits...
   </summary>
 
-  <ul style="margin: 1.5em 0 0 0; padding-left: 1em;">
-    <li><em>Each task can be written in virtually any coding language.</em></li>
-    <li><em>Is portable (compatible across platforms and job schedulers on the supercomputer).</em></li>
-    <li><em>Is reproducible through containerisation and version control.</em></li>
-    <li><em>Is highly customisable.</em></li>
-    <li><em>Easily resume work from any checkpoint.</em></li>
-    <li><em>Parallel processing – performs many tasks independently and simultaneously.</em></li>
-  </ul>
+  <div style="
+    border: 2px solid #DEABA0;
+    border-radius: 6px;
+    background-color: #250D18;
+    padding: 1em;
+    color: #DEABA0;
+    margin-top: -1em; /* pulls it closer to the summary */
+  ">
+    <ul style="margin: 0; padding-left: 1em;">
+      <li><em>Each task can be written in virtually any coding language.</em></li>
+      <li><em>Is portable (compatible across platforms and job schedulers on the supercomputer).</em></li>
+      <li><em>Is reproducible through containerisation and version control.</em></li>
+      <li><em>Is highly customisable.</em></li>
+      <li><em>Easily resume work from any checkpoint.</em></li>
+      <li><em>Parallel processing – performs many tasks independently and simultaneously.</em></li>
+    </ul>
+  </div>
 </details>
 
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 1.5;">
