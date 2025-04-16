@@ -83,8 +83,26 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 <img src="/assets/img/AB_Nextflow.png" alt="A simple Nextflow workflow example"
      style="display: block; margin: 0 auto;" width="600" />
 <br>
-<details style="border: 2px solid ;#DEABA0 border-radius: 8px; padding: 1em; background-color: #250D18; color: #DEABA0; font-family: Arial, sans-serif; margin-bottom: 0;">
-  <summary style="color: #250D18; border-bottom: 2px solid #DEABA0; padding-bottom: 0.5em; margin-bottom: 0.5em; cursor: pointer; font-weight:bold; font-family: Arial, sans-serif">
+<details style="
+  border: 2px solid #DEABA0;
+  border-radius: 8px;
+  padding: 1em;
+  background-color: #250D18;
+  font-family: Arial, sans-serif;
+  margin-bottom: 0;
+  color: #DEABA0;
+">
+  <summary style="
+    color: #DEABA0;
+    border: 2px solid #DEABA0;
+    border-radius: 6px;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background-color: #250D18;
+  ">
     Nextflow boasts many other benefits...
   </summary>
 
@@ -97,6 +115,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
     <li><em>Parallel processing – performs many tasks independently and simultaneously.</em></li>
   </ul>
 </details>
+
 
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 0;">
 
