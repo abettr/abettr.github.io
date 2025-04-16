@@ -137,7 +137,7 @@ reveals a very simplified expected Nextflow work directory structure containing 
   </summary>
 
   <div style="border: 2px solid #DEABA0; border-radius: 6px; background-color: #250D18; padding: 0em; color: #DEABA0; margin-top: -0.5em; /* pulls it closer to the summary */ transition: margin-bottom 1.5">
-    <table style="width: 100%; border-collapse: collapse; color: #DEABA0;">
+    <table style="width: 100%; border-collapse: separate; border-spacing: 0; color: #DEABA0; border: 2px solid #DEABA0; border-radius: 6px;">
       <thead>
         <tr>
           <th style="font-weight: bold; border-bottom: 1px solid #DEABA0; background-color: #250D18; padding: 0.5em;">File name</th>
