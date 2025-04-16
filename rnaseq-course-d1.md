@@ -109,6 +109,7 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
     padding: 0em;
     color: #DEABA0;
     margin-top: -2em; /* pulls it closer to the summary */
+    transition: margin-bottom 1.5
   ">
     <ul style="margin: 1em 0 0 0; padding-left: 2em;">
       <li><em>Each task can be written in virtually any coding language.</em></li>
@@ -122,6 +123,13 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 </details>
 
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px; margin-top: 1.5;">
+
+<!-- Add the following CSS -->
+<style>
+  details[open] > div {
+    margin-bottom: 1.5em;  /* Increase margin-bottom when expanded */
+  }
+</style>
 
 ### 2.1.1. What you should know
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
