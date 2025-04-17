@@ -120,6 +120,8 @@ Nextflow is Both a workflow management system and a domain-speciifc language bas
 ### 2.1.1. What you should know
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
+<font color="red">ADD SOMETHING HERE ABOUT CONFIURATION AND PARAMETERS</font>
+
 Everytime you execute or resume Nextflow a unique work directory based on a hash is created. This work directory is used to stage input files and scripts in addition to writing outputs for downstream tasks and/or publishing (desired outputs are copied over to our project input and output directories).
 
 You will find the Nextflow logfile and work directory from wherever you execute your nf-core pipeline. For example:
@@ -198,15 +200,38 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 
 - This **[pipeline](https://nf-co.re/fetchngs/1.12.0/)** allows us to fetch metadata and raw FASTQ files from public and private databases.
 - The pipeline currently supports SRA/ENA/DDBJ/GEO/Synapse IDs.
-- **You only need to input a list of sequence accessions (sequence database IDs)**.
+- **You only need to input a list of sequence accessions (sequence database IDs) one per line**.
 
 <img src="/assets/img/fetchngs_AB.png" alt="fetchngs pipeline workflow, from FASTQ prefetch to downstream pipelines."
      style="display: block; margin: 0 auto;" width="1000" />
 
 <br>
+
+*These accessions are used to grab metadata and then download FASTQ files before collating into a single samplesheet for the nf-core rnaseq pipeline.*
+
+<details style="font-family: Arial, sans-serif; margin-bottom: 0; color: #250D18;">
+  <summary style="color: #DEABA0; border: 2px solid #DEABA0; border-radius: 6px; padding: 0.5em; margin-bottom: 1.5em; cursor: pointer; font-weight: bold; background-color: #250D18;">
+    For a more in-depth explanation...
+  </summary>
+
+  <div style="border: 2px solid #DEABA0; border-radius: 6px; background-color: #250D18; padding: 0em; color: #DEABA0; margin-top: -2em;">
+    <ol style="margin: 1em 0 0 0; padding-left: 2em;">
+      <li><em>Your accessions are checked against existing databases and if they are compatible with the ENA API.</em></li>
+      <li><em>Accession metadata is collected through ENA API.</em></li>
+      <li><em>FASTQ files are downloaded (default = ftp) and md5 checksums are generated.</em></li>
+      <li><em>Metadata and FASTQ file paths (locations) are collated into a samplesheet for the rnaseq pipeline.</em></li>
+    </ol>
+    <div style="padding-left: 2em; margin-top: 1em;">
+      💡 If FASTQ prefetch does not work, or you prefer another download tool, add <code style="background-color: #7B1F3F; color: #DE7B21;">--download_method</code> parameter to your command.  
+      <br>
+      💡 Md5 checksums are 32-character alphanumeric hashes that are used to check if your files may have corrupted during transfer and is a handy troubleshooting tool.
+    </div>
+  </div>
+</details>
+
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-## 3.1. Finding a dataset
+## 3.1. How to find a dataset
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - We first need to find a dataset. Some of you may already have found one via a paper that you have read etc.
