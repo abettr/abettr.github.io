@@ -907,7 +907,6 @@ pre {
   border-left: 0.4375rem solid #250D18;
   scrollbar-color: #DE7B21 transparent;
   scrollbar-width: auto;
-  overflow: scroll;
 }
 /* WebKit (Chrome, Edge, Safari) Scrollbar Styling */
 .highlight > pre::-webkit-scrollbar {
