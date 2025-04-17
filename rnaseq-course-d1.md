@@ -196,9 +196,9 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 # 3. nf-core/fetchngs Pipeline
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-- This **[pipeline](https://nf-co.re/fetchngs/1.12.0/)** allows us to fetch metadata and raw FastQ files from public and private databases
+- This **[pipeline](https://nf-co.re/fetchngs/1.12.0/)** allows us to fetch metadata and raw FASTQ files from public and private databases.
 - The pipeline currently supports SRA/ENA/DDBJ/GEO/Synapse IDs.
-- The only input it needs is a list of accessions (sequence database IDs).
+- **You only need to input a list of sequence accessions (sequence database IDs)**.
 
 <img src="/assets/img/fetchngs_AB.png" alt="fetchngs pipeline workflow, from FASTQ prefetch to downstream pipelines."
      style="display: block; margin: 0 auto;" width="1000" />
