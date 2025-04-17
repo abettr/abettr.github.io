@@ -58,6 +58,13 @@ You should expect to:
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
+## FASTQ format
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
+
+A placeholder for FASTQ file format.
+<br>
+<hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
+
 # 2. An introduction to nf-core
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;"> 
 
@@ -375,7 +382,7 @@ git clone https://github.com/Gibbatron/rnaseq-course.git
 - To double check if the directory has been downloaded, we can use the `ls` command.
 - We should also see that the directory is now in the 'Explorer' window on the left. This may not be the case. To update the window, we can simply click the 'Refresh Explorer' button.
 
-<img src="/ssets/img/d1-fig3.png" alt="Pulling the project from GitHub" width="1000"/>
+<img src="/assets/img/d1-fig3.png" alt="Pulling the project from GitHub" width="1000"/>
 
 - To see the contents of the downloaded directory, you can click on it to expand, or use the drop-down arrow next to it.
 
