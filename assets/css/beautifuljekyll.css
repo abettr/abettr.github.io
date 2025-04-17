@@ -905,6 +905,27 @@ pre {
   background-position-y: 0.625rem;
   border: 1px solid rgba(37,13,24,0.1);
   border-left: 0.4375rem solid #250D18;
+  scrollbar-color: #DE7B21 transparent;
+}
+/* WebKit (Chrome, Edge, Safari) Scrollbar Styling */
+.highlight > pre::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.highlight > pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.highlight > pre::-webkit-scrollbar-thumb {
+  background-color: #DE7B21;
+  border-radius: 5px;
+}
+
+.highlight > pre::-webkit-scrollbar-button {
+  background-color: #DE7B21;
+  height: 10px;
+  width: 10px;
 }
 .highlight > pre:not([class~="highlight"]) { /* code block with line number */
   padding: 0;
