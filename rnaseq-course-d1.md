@@ -199,6 +199,10 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 - This pipeline allows us to fetch metadata and raw FastQ files from public and private databases
 - The pipeline currently supports SRA/ENA/DDBJ/GEO/Synapse IDs.
 - The only input it needs is a list of accessions (sequence database IDs).
+
+<img src="/assets/img/fetchngs_AB.png" alt="fetchngs pipeline workflow, from FASTQ prefetch to downstream pipelines."
+     style="display: block; margin: 0 auto;" width="1000" />
+
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
@@ -207,7 +211,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 
 - We first need to find a dataset. Some of you may already have found one via a paper that you have read etc.
 - There are multiple repositories that we can find samples on. The two most common are **Gene Expression Omnibus ([GEO](https://www.ncbi.nlm.nih.gov/geo/))** and **[Array Express](https://www.ebi.ac.uk/biostudies/arrayexpress)**.
-- For this course, we will use **GEO** to find our dataset.
+- **For this course, we will use GEO to find our dataset.**
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
@@ -233,7 +237,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 
 <img src="/assets/img/figure-12.png" alt="Dataset that we will be using" width="1000"/>
 
-- Clicking on the dataset title will load the series record for that dataset. Can everyone follow this [link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225253) and follow along.
+- Clicking on the dataset title will load the series record for that dataset. Can everyone follow this **[link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225253)** and follow along.
 
 <img src="/assets/img/figure-13.png" alt="GEO series record" width="500"/>
 
