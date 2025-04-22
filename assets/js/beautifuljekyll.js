@@ -29,6 +29,8 @@ let BeautifulJekyllJS = {
     BeautifulJekyllJS.initImgs();
 
     BeautifulJekyllJS.initSearch();
+
+    BeautifulJekyllJS.initVideoSpeedControls();
   },
 
   initNavbar : function() {
@@ -112,6 +114,35 @@ let BeautifulJekyllJS = {
     }
   },
 
+  initVideoSpeedControls: function() {
+    $('video').each(function(index) {
+      const video = $(this);
+      const videoId = `video-${index}`;
+      video.attr('id', videoId);
+  
+      const speedSelector = $(`
+        <div class="video-speed-control" style="margin-top: 0.5rem;">
+          <label for="speed-${index}" style="margin-right: 0.3rem;">Speed:</label>
+          <select id="speed-${index}" class="form-select form-select-sm" style="width: auto; display: inline-block;">
+            <option value="0.5">0.5x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
+          </select>
+        </div>
+      `);
+  
+      // Insert the selector after the video
+      video.after(speedSelector);
+  
+      // Update video playback speed on change
+      speedSelector.find('select').on('change', function() {
+        const selectedSpeed = parseFloat($(this).val());
+        document.getElementById(videoId).playbackRate = selectedSpeed;
+      });
+    });
+  },
+
   initSearch : function() {
     if (!document.getElementById("beautifuljekyll-search-overlay")) {
       return;
@@ -140,3 +171,4 @@ let BeautifulJekyllJS = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
+
