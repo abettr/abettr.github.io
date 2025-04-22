@@ -247,7 +247,9 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 - When accessing the GEO website, we are faced with multiple links and tools.
 - If we have a dataset in mind that we would like to find, we can use the search bar at the top right of the page.
 
-<img src="/assets/img/GEO_dataset.mp4" alt="How to find workshop dataset" width="1000"/>
+<video width="1000" controls loop="" muted="" autoplay="">
+  <source src="/assets/img/GEO_dataset.mp4" alt="How to find workshop dataset">
+</video>
 
 - I would like to find a bulk rna seq dataset on renal cell carcinoma. To do this, I enter '**renal cell carcinoma rna seq**' into the search bar and click 'search'.
 - A pop-up window appears telling me that there are 351 results. Clicking on the '351' will load the results.
