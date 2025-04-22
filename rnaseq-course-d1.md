@@ -247,7 +247,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 - When accessing the GEO website, we are faced with multiple links and tools.
 - If we have a dataset in mind that we would like to find, we can use the search bar at the top right of the page.
 
-<video width="1000" controls loop="" muted="" autoplay="">
+<video width="100%" controls loop="" muted="" autoplay="">
   <source src="/assets/img/GEO_dataset.mp4" alt="How to find workshop dataset">
 </video>
 
