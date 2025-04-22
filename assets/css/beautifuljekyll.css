@@ -947,9 +947,8 @@ pre {
 
 .dropdown-menu .dropdown-item:focus,
 .dropdown-menu .dropdown-item:hover {
-  outline: 2px solid white;
+  outline: 2px solid white !important;
 } 
-
 
 pre, pre code {
   color: #250D18; /* or any color you prefer */
