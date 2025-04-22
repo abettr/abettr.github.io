@@ -148,6 +148,15 @@ let BeautifulJekyllJS = {
           border: 1px solid white !important;  /* Override default border */
           box-shadow: 0 0 0 2px white !important; /* Add white shadow around focus */
         }
+
+        /* For when the dropdown is expanded, make sure the border stays white */
+        .video-speed-control select:focus::-webkit-dropdown-button {
+          border-color: white !important;
+        }
+
+        .video-speed-control select:focus:active {
+          border-color: white !important;
+        }
       `;
 
       const style = document.createElement('style');
