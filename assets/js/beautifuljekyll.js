@@ -1,5 +1,3 @@
-// Dean Attali / Beautiful Jekyll 2023
-
 let BeautifulJekyllJS = {
 
   bigImgEl : null,
@@ -69,7 +67,6 @@ let BeautifulJekyllJS = {
 
         const prefetchImg = new Image();
         prefetchImg.src = src;
-        // if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
 
         setTimeout(function(){
           const img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
@@ -77,13 +74,11 @@ let BeautifulJekyllJS = {
           setTimeout(function(){ img.css("opacity", "1"); }, 50);
 
           // after the animation of fading in the new image is done, prefetch the next one
-          //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
           setTimeout(function() {
             BeautifulJekyllJS.setImg(src, desc);
             img.remove();
             getNextImg();
           }, 1000);
-          //});
         }, 6000);
       };
 
@@ -132,52 +127,12 @@ let BeautifulJekyllJS = {
         </div>
       `);
 
-      const customSelectStyles = `
-        .video-speed-control select {
-          background-color: #D08576;
-          color: #3E1628;
-          border: 1px solid white;
-          width: auto;
-          display: inline-block;
-          border-radius: 0.5rem;
-          transition: border 0.3s ease-in-out;
-        }
-
-        .video-speed-control select:focus {
-          outline: none;  /* Remove default focus outline */
-          border: 1px solid white !important;  /* Override default border */
-          box-shadow: 0 0 0 2px white !important; /* Add white shadow around focus */
-        }
-
-        /* Ensure that the dropdown itself stays consistent in style when open */
-        .video-speed-control select::-webkit-dropdown-button {
-          border: none !important;
-        }
-
-        .video-speed-control select:focus::-webkit-dropdown-button {
-          border: none !important;
-        }
-
-        .video-speed-control select:active::-webkit-dropdown-button {
-          border: none !important;
-        }
-
-        /* For Firefox: remove the dropdown arrow outline */
-        .video-speed-control select:focus::-moz-focus-inner {
-          border: none !important;
-        }
-
-        /* Target the actual dropdown list when focused */
-        .video-speed-control select:focus {
-          border-color: white !important;  /* Force white border */
-          box-shadow: 0 0 0 2px white !important; /* Add white shadow around focus */
-        }
-      `;
-
-      const style = document.createElement('style');
-      style.type = 'text/css';
-      style.appendChild(document.createTextNode(customSelectStyles));
-      document.head.appendChild(style);
+      // Apply additional styling for the expanded dropdown
+      $('#speed-' + index).on('focus', function() {
+        $(this).css('border', '2px solid white');
+      }).on('blur', function() {
+        $(this).css('border', '1px solid white');
+      });
   
       // Insert the selector after the video
       video.after(speedSelector);
@@ -218,4 +173,3 @@ let BeautifulJekyllJS = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
-
