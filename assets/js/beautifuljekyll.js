@@ -149,13 +149,28 @@ let BeautifulJekyllJS = {
           box-shadow: 0 0 0 2px white !important; /* Add white shadow around focus */
         }
 
-        /* For when the dropdown is expanded, make sure the border stays white */
-        .video-speed-control select:focus::-webkit-dropdown-button {
-          border-color: white !important;
+        /* Ensure that the dropdown itself stays consistent in style when open */
+        .video-speed-control select::-webkit-dropdown-button {
+          border: none !important;
         }
 
-        .video-speed-control select:focus:active {
-          border-color: white !important;
+        .video-speed-control select:focus::-webkit-dropdown-button {
+          border: none !important;
+        }
+
+        .video-speed-control select:active::-webkit-dropdown-button {
+          border: none !important;
+        }
+
+        /* For Firefox: remove the dropdown arrow outline */
+        .video-speed-control select:focus::-moz-focus-inner {
+          border: none !important;
+        }
+
+        /* Target the actual dropdown list when focused */
+        .video-speed-control select:focus {
+          border-color: white !important;  /* Force white border */
+          box-shadow: 0 0 0 2px white !important; /* Add white shadow around focus */
         }
       `;
 
