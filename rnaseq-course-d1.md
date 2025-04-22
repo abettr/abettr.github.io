@@ -225,6 +225,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
       💡 If FASTQ prefetch does not work, or you prefer another download tool, add <code style="background-color: #7B1F3F; color: #DE7B21;">--download_method</code> parameter to your command.  
       <br>
       💡 Md5 checksums are 32-character alphanumeric hashes that are used to check if your files may have corrupted during transfer and is a handy troubleshooting tool.
+      <br>
     </div>
   </div>
 </details>
@@ -246,7 +247,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 - When accessing the GEO website, we are faced with multiple links and tools.
 - If we have a dataset in mind that we would like to find, we can use the search bar at the top right of the page.
 
-<img src="/assets/img/figure-9.png" alt="GEO Homepage" width="1000"/>
+<img src="/assets/img/GEO_dataset.mp4" alt="How to find workshop dataset" width="1000"/>
 
 - I would like to find a bulk rna seq dataset on renal cell carcinoma. To do this, I enter '**renal cell carcinoma rna seq**' into the search bar and click 'search'.
 - A pop-up window appears telling me that there are 351 results. Clicking on the '351' will load the results.
