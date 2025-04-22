@@ -226,7 +226,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
       <br>
       💡 Md5 checksums are 32-character alphanumeric hashes that are used to check if your files may have corrupted during transfer and is a handy troubleshooting tool.
       <br>
-      
+      <div class="mb-4"></div>
     </div>
   </div>
 </details>
