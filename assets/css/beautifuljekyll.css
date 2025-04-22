@@ -945,6 +945,12 @@ pre {
   border-right: 2px solid #250D18;
 }
 
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:hover {
+  outline: 2px solid white;
+} 
+
+
 pre, pre code {
   color: #250D18; /* or any color you prefer */
 }
