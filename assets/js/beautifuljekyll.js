@@ -122,8 +122,8 @@ let BeautifulJekyllJS = {
   
       const speedSelector = $(`
         <div class="video-speed-control" style="margin-top: 0.5rem;">
-          <label for="speed-${index}" style="margin-right: 0.3rem;">Speed:</label>
-          <select id="speed-${index}" class="form-select form-select-sm" style="width: auto; display: inline-block;">
+          <label for="speed-${index}" style="margin-right: 0.3rem;">Video playback speed:</label>
+          <select id="speed-${index}" class="form-select form-select-sm" style="width: auto; display: inline-block; background-color: #D08576; color: #3E1628; border: 1px solid white;">
             <option value="0.5">0.5x</option>
             <option value="1" selected>1x</option>
             <option value="1.5">1.5x</option>
