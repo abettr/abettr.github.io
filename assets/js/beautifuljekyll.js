@@ -151,7 +151,8 @@ let BeautifulJekyllJS = {
         }
 
         .video-speed-control select:focus {
-          outline: 2px solid white;
+          border-color: white !important;
+          border-radius: 0.5rem !important;
         }
       `;
 
