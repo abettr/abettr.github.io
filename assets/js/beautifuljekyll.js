@@ -137,8 +137,17 @@ let BeautifulJekyllJS = {
           background-color: #D08576;
           color: #3E1628;
           border: 1px solid white;
+          border-radius: 0.5rem; /* Rounded corners */
           width: auto;
           display: inline-block;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          padding: 0.25rem 1.5rem 0.25rem 0.5rem;
+          background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6H0z' fill='%233E1628'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: right 0.5rem center;
+          background-size: 0.65rem;
         }
 
         .video-speed-control select:focus {
