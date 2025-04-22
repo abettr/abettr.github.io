@@ -839,6 +839,16 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   background-color: var(--hover-col);
 }
 
+.page-content .dropdown-menu .dropdown-item:focus,
+.page-content .dropdown-menu .dropdown-item:hover {
+  outline: 2px solid white !important;
+}
+
+.dropdown-menu .dropdown-item a:focus,
+.dropdown-menu .dropdown-item a:hover {
+  outline: 2px solid white !important;
+}
+
 /* --- Tables --- */
 
 table {
@@ -944,11 +954,6 @@ pre {
   border-radius: 0;
   border-right: 2px solid #250D18;
 }
-
-.dropdown-menu .dropdown-item:focus,
-.dropdown-menu .dropdown-item:hover {
-  outline: 2px solid white !important;
-} 
 
 pre, pre code {
   color: #250D18; /* or any color you prefer */
