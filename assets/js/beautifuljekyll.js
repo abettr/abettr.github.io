@@ -131,6 +131,25 @@ let BeautifulJekyllJS = {
           </select>
         </div>
       `);
+
+      const customSelectStyles = `
+        .video-speed-control select {
+          background-color: #D08576;
+          color: #3E1628;
+          border: 1px solid white;
+          width: auto;
+          display: inline-block;
+        }
+
+        .video-speed-control select:focus {
+          outline: 2px solid white;
+        }
+      `;
+
+      const style = document.createElement('style');
+      style.type = 'text/css';
+      style.appendChild(document.createTextNode(customSelectStyles));
+      document.head.appendChild(style);
   
       // Insert the selector after the video
       video.after(speedSelector);
