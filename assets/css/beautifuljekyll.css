@@ -841,12 +841,12 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 
 .page-content .dropdown-menu .dropdown-item:focus,
 .page-content .dropdown-menu .dropdown-item:hover {
-  outline: 2px solid white !important;
+  border: 2px solid white !important;
 }
 
 .dropdown-menu .dropdown-item a:focus,
 .dropdown-menu .dropdown-item a:hover {
-  outline: 2px solid white !important;
+  border: 2px solid white !important;
 }
 
 /* --- Tables --- */

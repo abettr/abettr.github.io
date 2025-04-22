@@ -173,3 +173,18 @@ let BeautifulJekyllJS = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
+
+document.querySelectorAll('.dropdown-item').forEach(item => {
+  item.addEventListener('focus', () => {
+      item.style.outline = '2px solid white';
+  });
+  item.addEventListener('blur', () => {
+      item.style.outline = '';
+  });
+  item.addEventListener('mouseover', () => {
+      item.style.outline = '2px solid white';
+  });
+  item.addEventListener('mouseout', () => {
+      item.style.outline = '';
+  });
+});
