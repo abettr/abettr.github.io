@@ -137,22 +137,16 @@ let BeautifulJekyllJS = {
           background-color: #D08576;
           color: #3E1628;
           border: 1px solid white;
-          border-radius: 0.5rem; /* Rounded corners */
           width: auto;
           display: inline-block;
-          appearance: none;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          padding: 0.25rem 1.5rem 0.25rem 0.5rem;
-          background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6H0z' fill='%233E1628'/%3E%3C/svg%3E");
-          background-repeat: no-repeat;
-          background-position: right 0.5rem center;
-          background-size: 0.65rem;
+          border-radius: 0.5rem;
+          transition: border 0.3s ease-in-out;
         }
 
         .video-speed-control select:focus {
-          border-color: white !important;
-          border-radius: 0.5rem !important;
+          outline: none;  /* Remove default focus outline */
+          border: 1px solid white !important;  /* Override default border */
+          box-shadow: 0 0 0 2px white !important; /* Add white shadow around focus */
         }
       `;
 
