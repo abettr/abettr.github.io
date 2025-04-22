@@ -205,8 +205,6 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 <img src="/assets/img/fetchngs_AB.png" alt="fetchngs pipeline workflow, from FASTQ prefetch to downstream pipelines."
      style="display: block; margin: 0 auto;" width="1000" />
 
-<br>
-
 *These accessions are used to grab metadata and then download FASTQ files before collating into a single samplesheet for the nf-core rnaseq pipeline.*
 
 <details style="font-family: Arial, sans-serif; margin-bottom: 0; color: #250D18;">
@@ -245,49 +243,76 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 ### 3.1.1. Navigating GEO
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-- When accessing the GEO website, we are faced with multiple links and tools.
-- If we have a dataset in mind that we would like to find, we can use the search bar at the top right of the page.
+First, visit https://www.ncbi.nlm.nih.gov/geo/ and follow the video/written instructions below to locate your working GEO dataset.
+
+**This dataset will enable you to compare effects of hypoxia on gene expression across two different cell lines.**
 
 <video width="100%" controls loop="" muted="" autoplay="">
   <source src="/assets/img/GEO_dataset.mp4" alt="How to find workshop dataset">
 </video>
+<br>
+<br>
+To summarise, you:
 
-- I would like to find a bulk rna seq dataset on renal cell carcinoma. To do this, I enter '**renal cell carcinoma rna seq**' into the search bar and click 'search'.
-- A pop-up window appears telling me that there are 351 results. Clicking on the '351' will load the results.
+<ol style="margin: 1em 0 0 0; padding-left: 2em;">
+  <li><em>Type 'renal cell carcinoma rna seq hypoxia' in the search bar.</em></li>
+  <li><em>Click on the link presented in the pop up window showing all results.</em></li>
+  <li><em>Scroll down and click on 'Effect of hypoxia on gene expression among HK-2 cells and 786-0 cells'.</em></li>
+  <li><em>Can find what you just did through <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225253">here</a>.</em></li>
+</ol>
 
-<img src="/assets/img/figure-10.png" alt="using GEO search bar" width="1000"/>
+<div style="position: relative; margin-top: 2rem;">
+  <div style="background-color:#250D18; border-top: 37px solid #7B1F3F; padding: 10px 16px 10px; color: #DEABA0; position: relative;">
+    <span style="position: absolute; top: -30px; left: 1px; font-weight: bold; color: #DEABA0; background-color: #7B1F3F; padding: 5px 10px; line-height: 20px; display: inline-block; border-radius: 4px;">
+      &#128161; Tip:
+    </span>
+    GEO allows you to filter for organism, tissue, assay type, and more in the left side menu and the top right per top organism.
+  </div>
+</div>
+<br>
 
-- On the results page, we are greeted with the results accompanied by further optional filters on the left and right hand side of the page.
-
-<img src="/assets/img/figure-11.png" alt="Results page" width="1000"/>
-
-- Here, we will choose to filter for **Homo sapiens** using the option on the right hand side and then browse for an interesting dataset.
-- For this course, I found a nice dataset looking at the effects of hypoxia on gene expression across two different cell lines.
-
-<img src="/assets/img/figure-12.png" alt="Dataset that we will be using" width="1000"/>
-
-- Clicking on the dataset title will load the series record for that dataset. Can everyone follow this **[link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225253)** and follow along.
+You should now be presented with the following... 
 
 <img src="/assets/img/figure-13.png" alt="GEO series record" width="500"/>
 
-- The dataset series record page displays the all the relevant information about that dataset.
-- Towards the top of the page, you will find information about the study in which the dataset was used.
+GEO will also display:
 
-<span style="color:green;">**Contributors and Citation**</span>
-- The authors and any related publication can be found in the contributors and citations sections.
+- Information about the authors and publication under **<span style="color:green;">Contributors and Citation.</span>**
+- **<span style="color:deeppink;">Analyze with GEO2R and Download RNA-seq counts</span>** tools.
+- Information about each **<span style="color:purple;">sample and sequencing platform.</span>**
+- **<span style="color:orange;">Bioproject ID.</span>** This ID is assigned once submitting raw sequencing data to the **Sequencing Read Archive (SRA).** This link can also take you to the SRA in addition to **<span style="color:red;">SRA Run Selector</span>** (a more direct link to raw data).
+- Any **<span style="color:blue;">Supplementary files</span>** associated with the study.
 
-<span style="color:deeppink;">**Analyze with GEO2R and Download RNA-seq counts**</span>
-- The **Analyze with GEO2R** option has been on GEO for quite some time, and is a handy tool to use if you are performing the most basic of analyses.
-- The tool allows you to define your own groups and can perform Differential Gene Expression (DGE) analyses rather quickly.
-- It's a great tool, but doesn't always work on the dataset you want to analyse (depends on what data the authors have uploaded)
-- **It's worth checking this tool out before continuing**. We won't be covering this tool during this course. If you would like a run through on it, please get in touch.
+<div style="position: relative; margin-top: 2rem;">
+  <div style="background-color:#250D18; border-top: 37px solid #7B1F3F; padding: 10px 16px 10px; color: #DEABA0; position: relative;">
+    <span style="position: absolute; top: -30px; left: 1px; font-weight: bold; color: #DEABA0; background-color: #7B1F3F; padding: 5px 10px; line-height: 20px; display: inline-block; border-radius: 4px;">
+      &#x26A0; Important!:
+    </span>
+   Any uploaded supplementary data is down to the authors. For GEO, the authors must at least upload their normalised data in which their observations were made. You may also get lucky with uploaded differentially expressed gene (DEG) tables with raw sequencing read counts but this is not always guaranteed. For the sake of this course, we will generate our own DEGs.
+  </div>
+</div>
+<br>
 
-<details>
-<summary><b>Analyze with GEO2R tool</b></summary>
+<details style="font-family: Arial, sans-serif; margin-bottom: 0; color: #250D18;">
+  <summary style="color: #DEABA0; border: 2px solid #DEABA0; border-radius: 6px; padding: 0.5em; margin-bottom: 1.5em; cursor: pointer; font-weight: bold; background-color: #250D18;">
+    More on Analyze with GEO2R...
+  </summary>
+
+  <div style="border: 2px solid #DEABA0; border-radius: 6px; background-color: #250D18; padding: 1.5em; color: #DEABA0; margin-top: -2em;">
+  Although we won't use GEO2R, it can help you perform very basic analysis. You can define your own groups/contrasts and perform differential gene expression (DGE) rather quickly. Be aware that this tool does not always work and is dependant on what data the authors have uploaded.
+  <div class="mb-4"></div>
+  <div style="text-align: center;">
+  <img src="/assets/img/figure-14.png" alt="Analyze with GEO2R tool" width="90%" />
+  </div>
+  <div class="mb-4"></div>
+  </div>
+</details>
+
+
 
 <br>
 
-<img src="/assets/img/figure-14.png" alt="Analyze with GEO2R tool" width="1000"/>
+
 
 </details>
 
@@ -306,25 +331,6 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 
 </details>
 
-<span style="color:purple;">**Platforms and Samples**</span>
-- This section shows us information about the samples and what platform they were sequenced on.
-
-<span style="color:orange;">**BioProject**</span>
-- The raw sequencing data for a dataset is stored in the **Sequencing Read Archive (SRA)**. Once samples have been uploaded, they are given a BioProject ID.
-- This BioProject ID link takes us straight to where the raw sequencing data is stored.
-
-<span style="color:blue;">**Supplementary files**</span>
-- All the associated data is stored in this section.
-- What you have here is completely down to how nice the authors are.
-- For a GEO upload, the authors must upload normalised data tables in which their observations were made.
-- Sometimes authors also upload Differentially Expressed Gene (DEG) tables and raw sequencing read counts.
-- These authors have been so very kind to upload their DEGs, so there really is no need for us to continue on. But most authors do not upload these, so we will need to make them ourselves.
-
-<span style="color:red;">**SRA Run Selector**</span>
-- The SRA Run Selector link takes us directly to the SRA where we can download the sequencing data.
-- Some may be asking, isn't this the same as the BioProject ID link? Yes and no.
-- The BioProject ID link takes you to an overview page, just like the GEO page we are currently on.
-- The SRA Run Selector link takes us directly to the page where we can download the data.
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
