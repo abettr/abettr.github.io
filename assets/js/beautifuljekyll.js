@@ -119,21 +119,14 @@ let BeautifulJekyllJS = {
         <div class="video-speed-control" style="margin-top: 0.5rem;">
           <label for="speed-${index}" style="margin-right: 0.3rem;">Video playback speed:</label>
           <select id="speed-${index}" class="form-select form-select-sm" style="width: auto; display: inline-block; border-radius: 0.5rem !important; background-color: #D08576; color: #3E1628; border: 1px solid white;">
-            <option value="0.5" class="custom-option">0.5x</option>
-            <option value="1" class="custom-option" selected>1x</option>
-            <option value="1.5" class="custom-option">1.5x</option>
-            <option value="2" class="custom-option">2x</option>
+            <option value="0.5">0.5x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
           </select>
         </div>
       `);
-
-      // Apply additional styling for the expanded dropdown
-      $('#speed-' + index).on('focus', function() {
-        $(this).css('border', '2px solid white');
-      }).on('blur', function() {
-        $(this).css('border', '1px solid white');
-      });
-  
+ 
       // Insert the selector after the video
       video.after(speedSelector);
   

@@ -232,7 +232,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-## 3.1. How to find a dataset
+## 3.1. How to find a public dataset
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - We first need to find a dataset. Some of you may already have found one via a paper that you have read etc.
@@ -241,7 +241,7 @@ The nextflow logfile (.nextflow.log) is handy to view the total pipeline executi
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-### 3.1.1. GEO
+### 3.1.1. Navigating GEO
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
 - When accessing the GEO website, we are faced with multiple links and tools.

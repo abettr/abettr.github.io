@@ -21,7 +21,7 @@ layout: null
   /* common CSS variables */
   --body-font: 'Lora', 'Times New Roman', serif;
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --mid-col: #808080;
+  --mid-col: #FFFFFF;
 }
 
 /* --- General --- */
@@ -87,7 +87,7 @@ blockquote p:first-child {
   margin-top: 0;
 }
 .jumbotron {
-  background: #EEE;
+  background: #FFFFFF;
 }
 hr.small {
   max-width: 6.25rem;
@@ -343,6 +343,7 @@ img {
 .navbar-custom .navbar-nav .dropdown-menu .dropdown-item:hover,
 .navbar-custom .navbar-nav .dropdown-menu .dropdown-item:focus {
   color: #DE7B21 !important;
+  border: #FFFFFF !important;
 }
 
 .navbar-custom .avatar-container {
@@ -493,7 +494,7 @@ footer .footer-custom-content {
 
 .post-preview {
   padding: 1.25rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #FFFFFF;
   overflow: hidden;
 }
 
@@ -716,7 +717,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
   padding: 6.25rem 0;
-  color: #FFF;
+  color: #FFFFFF;
   text-shadow: 1px 1px 3px #000;
 }
 .intro-header .page-heading h1 {
@@ -749,14 +750,14 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   -moz-box-shadow: 1px 1px 3px #000;
 }
 .intro-header.big-img .post-heading .post-meta {
-  color: #EEE;
+  color: #FFFFFF;
 }
 .intro-header.big-img .img-desc {
   background: rgba(30, 30, 30, 0.6);
   position: absolute;
   padding: 0.3125rem 0.625rem;
   font-size: 0.6875rem;
-  color: #EEE;
+  color: #FFFFFF;
   font-family: var(--header-font);
   right: 0;
   bottom: 0;
@@ -839,27 +840,23 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   background-color: var(--hover-col);
 }
 
-.custom-option {
-  box-shadow: 0 0 0 2px white;
-}
-
 /* --- Tables --- */
 
 table {
   padding: 0;
 }
 table tr {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #FFFFFF;
   background-color: var(--page-col);
   margin: 0;
   padding: 0;
 }
 table tr:nth-child(2n) {
-  background-color: #f8f8f8;
+  background-color: #FFFFFF;
 }
 table tr th,
 table tr td {
-  border: 1px solid #cccccc;
+  border: 1px solid #FFFFFF;
   text-align: left;
   margin: 0;
   padding: 0.375rem 0.8125rem;
@@ -988,7 +985,7 @@ aside {
 }
 
 #social-share-section a {
-  color: #fff;
+  color: #FFFFFF;
 }
 
 /* --- Notification boxes --- */
@@ -998,13 +995,13 @@ aside {
 .box-success {
   padding: 0.9375rem 0.9375rem 0.9375rem 0.625rem;
   margin: 1.25rem 1.25rem 1.25rem 0.3125rem;
-  border: 1px solid #eee;
+  border: 1px solid #FFFFFF;
   border-left-width: 0.3125rem;
   border-radius: 0.3125rem 0.1875rem 0.1875rem 0.3125rem;
 }
 
 .box-note {
-  background-color: #eee;
+  background-color: #FFFFFF;
   border-left-color: #2980b9;
 }
 
@@ -1038,7 +1035,7 @@ aside {
   font-size: 0.875rem;
   padding: 0.625rem;
   font-style: italic;
-  color: #777;
+  color: #FFFFFF;
   margin: 0;
   display: block;
   border-bottom-right-radius: 0.3125rem;
@@ -1056,7 +1053,7 @@ aside {
   padding: 0.625rem 1.25rem;
   margin: 0 0 1.25rem;
   font-size: 1.1rem;
-  border-left: 0.3125rem solid #eee;
+  border-left: 0.3125rem solid #FFFFFF;
 }
 
 .blog-post blockquote p:last-child {
@@ -1099,7 +1096,7 @@ aside {
 }
 #nav-search-input {
   text-align: center;
-  background: #e7edee;
+  background: #FFFFFF;
   margin: auto;
   display: block;
   font-size: 2rem;
@@ -1129,30 +1126,30 @@ aside {
   }
 }
 #nav-search-input:focus {
-  background: #f3f8fe;
-  box-shadow: 0px 0.15rem 1rem #e7f4ff;
+  background: #FFFFFF;
+  box-shadow: 0px 0.15rem 1rem #FFFFFF;
   outline: none;
 }
 
 #nav-search-input::placeholder {
-  color: #777;
+  color: #FFFFFF;
 }
 
 #search-results-container {
   list-style: none;
   padding-left: unset;
   margin-top: 1.5rem;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 1.5rem;
   max-height: calc(100vh - 6.5rem);
   overflow-y: auto;
 }
 #search-results-container a {
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
 }
 #search-results-container a:hover {
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: underline;
 }
 
