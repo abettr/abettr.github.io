@@ -258,7 +258,7 @@ To summarise, you:
   <li><em>Type 'renal cell carcinoma rna seq hypoxia' in the search bar.</em></li>
   <li><em>Click on the link presented in the pop up window showing all results.</em></li>
   <li><em>Scroll down and click on 'Effect of hypoxia on gene expression among HK-2 cells and 786-0 cells'.</em></li>
-  <li><em>Can find what you just did through <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225253">here</a>.</em></li>
+  <li><em>Can find what you just did through <strong><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225253">here</a></strong>.</em></li>
 </ol>
 
 <div style="position: relative; margin-top: 2rem;">
@@ -280,7 +280,7 @@ GEO will also display:
 - Information about the authors and publication under **<span style="color:green;">Contributors and Citation.</span>**
 - **<span style="color:deeppink;">Analyze with GEO2R and Download RNA-seq counts</span>** tools.
 - Information about each **<span style="color:purple;">sample and sequencing platform.</span>**
-- **<span style="color:orange;">Bioproject ID.</span>** This ID is assigned once submitting raw sequencing data to the **Sequencing Read Archive (SRA).** This link can also take you to the SRA in addition to **<span style="color:red;">SRA Run Selector</span>** (a more direct link to raw data).
+- **<span style="color:darkorange;">Bioproject ID.</span>** This ID is assigned once submitting raw sequencing data to the **Sequencing Read Archive (SRA).** This link can also take you to the SRA in addition to **<span style="color:red;">SRA Run Selector</span>** (a more direct link to raw data).
 - Any **<span style="color:blue;">Supplementary files</span>** associated with the study.
 
 <div style="position: relative; margin-top: 2rem;">
@@ -295,7 +295,7 @@ GEO will also display:
 
 <details style="font-family: Arial, sans-serif; margin-bottom: 0; color: #250D18;">
   <summary style="color: #DEABA0; border: 2px solid #DEABA0; border-radius: 6px; padding: 0.5em; margin-bottom: 1.5em; cursor: pointer; font-weight: bold; background-color: #250D18;">
-    More on Analyze with GEO2R...
+    More on GEO2R and download RNA-seq counts...
   </summary>
 
   <div style="border: 2px solid #DEABA0; border-radius: 6px; background-color: #250D18; padding: 1.5em; color: #DEABA0; margin-top: -2em;">
@@ -303,53 +303,53 @@ GEO will also display:
   <div class="mb-4"></div>
   <div style="text-align: center;">
   <img src="/assets/img/figure-14.png" alt="Analyze with GEO2R tool" width="90%" />
-  </div>
+  <div class="mb-4"></div>
+  <div style="text-align: left;">
+  The Download RNA-seq counts option will provide download links to all of the uploaded and NCBI-generated data though beware as this may not contain the raw sequencing data.
+  <div style="text-align: center;">
+  <div class="mb-4"></div>
+  <img src="/assets/img/figure-15.png" alt="Download RNA-seq counts" width="1000"/>
   <div class="mb-4"></div>
   </div>
 </details>
 
-
-
-<br>
-
-
-
-</details>
-
-<br>
-
-- The **Download RNA-seq counts** option takes you to a page which provides you with download links to all of the uploaded and NCBI-generated data.
-- This is really handy as it highlights what each piece of data is.
-- Again, this may not contain the raw sequencing data, but worth checking before proceeding.
-
-<details>
-<summary><b>Download RNA-seq counts</b></summary>
-
-<br>
-
-<img src="/assets/img/figure-15.png" alt="Download RNA-seq counts" width="1000"/>
-
-</details>
-
-<br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-### 3.1.2. Downloading the relevant data
+### 3.1.2. How to download the relevant data
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
-- We will be downloading **6 normoxia** samples, 3 from each cell line.
-- To do this, we need to click on the **SRA Run Selector** link.
-  1) Once the new page has loaded, we can go ahead and use the filter tool on the top left to select **8: Treatment**, then **normoxia**.
-  2) This filters the table at the bottom of the screen. We can then click the tick box at the top left of the table to **select all 6 samples**.
-  3) Once all samples are selected, we can now click on the **sliding Selected tab** so move it to the right. This filters the data to include only the samples we have selected.
-  4) Now we can click on the **Accession list** option. This downloads a text file called **SRR_Acc_List.txt**.
+- **Through GEO, the easiest route to download is through <span style="color:red;">SRA Run Selector**</span> <strong><a href="https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA934824&o=acc_s%3Aa">here.</a></strong>
+- For the sake of simplicity, **you will compare differential gene expression (DGE) between 2 cell lines.**
+  - You will be downloading **6 normoxia** samples, 3 from HK-2 and 3 from 786-0 cell lines.
 
-<img src="/assets/img/figure-16.png" alt="SRA Run Selector" width="1000"/>
+<div style="position: relative; margin-top: 2rem;">
+  <div style="background-color:#250D18; border-top: 37px solid #7B1F3F; padding: 10px 16px 10px; color: #DEABA0; position: relative;">
+    <span style="position: absolute; top: -30px; left: 1px; font-weight: bold; color: #DEABA0; background-color: #7B1F3F; padding: 5px 10px; line-height: 20px; display: inline-block; border-radius: 4px;">
+      &#128221; Note:
+    </span>
+    A typical bulk RNA-seq experiment is a little more complex where you would compare DGE across multiple tissues/cell lines, different treatments/disease states, in addition to comparing respective controls.
+  </div>
+</div>
+<br>
 
-<details>
-<summary><b>SRR_Acc_List.txt</b></summary>
+To do (see also video below): 
 
-<pre><span style="color:crimson;">
+- [ ] Go to <strong><a href="https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA934824&o=acc_s%3Aa">SRA run selector</a></strong> and use the filter tool on the top left to select **8: Treatment**, then **normoxia**.
+- [ ] **Select all 6 samples** in the bottom table.
+- [ ] Click on the **sliding Selected tab** in the table above. This ensures you only get the data you select.
+- [ ] Lastly, select **Accession list** option to the right of the selection tab. This downloads a text file called **SRR_Acc_List.txt**.
+
+<video width="100%" controls loop="" muted="" autoplay="">
+  <source src="/assets/img/SRA_selector.mp4" alt="How to find workshop dataset">
+</video>
+<br>
+
+<details style="font-family: Arial, sans-serif; margin-bottom: 0; color: #7B1F3F;">
+  <summary style="color: #DE7B21; border: 2px solid #DEABA0; border-radius: 6px; padding: 0.5em; margin-bottom: 1.5em; cursor: pointer; font-weight: bold; background-color: #7B1F3F;">
+    Your resulting accessions...
+  </summary>
+<div style="border: 2px solid #DEABA0; border-radius: 6px; background-color: #7B1F3F; padding: 0em; color: #DE7B21; margin-top: -2em; /* pulls it closer to the summary */ transition: margin-bottom 1.5">
+<pre><span>
 SRR23454118
 SRR23454119
 SRR23454122
@@ -357,8 +357,9 @@ SRR23454124
 SRR23454125
 SRR23454126
 </span></pre>
-
+</div>
 </details>
+
 <br>
 <hr style="height: 5px; background-color: #7B1F3F; border: none; width: 100%; border-radius: 10px;">
 
