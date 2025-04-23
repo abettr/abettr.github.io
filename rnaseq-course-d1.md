@@ -299,17 +299,19 @@ GEO will also display:
   </summary>
 
   <div style="border: 2px solid #DEABA0; border-radius: 6px; background-color: #250D18; padding: 1.5em; color: #DEABA0; margin-top: -2em;">
-  Although we won't use GEO2R, it can help you perform very basic analysis. You can define your own groups/contrasts and perform differential gene expression (DGE) rather quickly. Be aware that this tool does not always work and is dependant on what data the authors have uploaded.
+    Although we won't use GEO2R, it can help you perform very basic analysis. You can define your own groups/contrasts and perform differential gene expression (DGE) rather quickly. Be aware that this tool does not always work and is dependent on what data the authors have uploaded.
     <div class="mb-4"></div>
-  <div style="text-align: center;">
-  <img src="/assets/img/figure-14.png" alt="Analyze with GEO2R tool" width="90%" />
-  <div class="mb-4"></div>
-  <div style="text-align: left;">
-  The Download RNA-seq counts option will provide download links to all of the uploaded and NCBI-generated data though beware as this may not contain the raw sequencing data.
-  <div style="text-align: center;">
+    <div style="text-align: center;">
+      <img src="/assets/img/figure-14.png" alt="Analyze with GEO2R tool" width="90%" />
+    </div>
     <div class="mb-4"></div>
-    <img src="/assets/img/figure-15.png" alt="Download RNA-seq counts" width="1000"/>
-    <div class="mb-4"></div>
+    <div style="text-align: left;">
+      The Download RNA-seq counts option will provide download links to all of the uploaded and NCBI-generated data, though beware as this may not contain the raw sequencing data.
+    </div>
+    <div style="text-align: center;">
+      <div class="mb-4"></div>
+      <img src="/assets/img/figure-15.png" alt="Download RNA-seq counts" width="1000"/>
+      <div class="mb-4"></div>
     </div>
   </div>
 </details>
