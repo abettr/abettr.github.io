@@ -1,6 +1,6 @@
 ---
 title: "An introduction to Unix, NF-core & FASTQ prefetch"
-author: "Aimee Bettridge"
+author: "Aimee Bettridge, Alex Gibbs"
 editors: "Alex Gibbs, Robert Andrews"
 toc: true
 toc_sticky: true
@@ -330,6 +330,7 @@ GEO will also display:
     A typical bulk RNA-seq experiment is a little more complex where you would compare DGE across multiple tissues/cell lines, different treatments/disease states, in addition to comparing respective controls.
   </div>
 </div>
+
 <br>
 
 To do (see also video below): 
